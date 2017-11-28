@@ -1,0 +1,862 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Electrum - Мобильный - Android - Выберите свой кошелек - Биткойн</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+<link rel="stylesheet" href="/css/sans.css">
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>Русский</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/" class="active">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/ru/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/" selected="selected">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Введение</a>
+    <ul>
+      <li><a href="/ru/bitcoin-for-individuals">Частным лицам</a></li>
+      <li><a href="/ru/bitcoin-for-businesses">Бизнесу</a></li>
+      <li><a href="/ru/bitcoin-for-developers">Разработчикам</a></li>
+      <li><a href="/ru/getting-started">Начало работы</a></li>
+      <li><a href="/ru/how-it-works">Как это работает</a></li>
+      <li><a href="/ru/you-need-to-know">Вам нужно знать</a></li>
+    </ul>
+  </li>
+  <li><a>Ресурсы</a>
+    <ul>
+      <li><a href="/ru/resources">Ресурсы</a>
+      
+      <li><a href="/ru/community">Сообщество</a></li>
+      
+      <li><a href="/ru/vocabulary">Термины</a></li>
+      <li><a href="/ru/events">События</a></li>
+      
+        <li><a href="/ru/download">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/ru/innovation">Инновация</a></li>
+  <li><a>Участвовать</a>
+    <ul>
+      <li><a href="/ru/support-bitcoin">Поддержать Биткойн</a>
+      
+      
+      <li><a href="/ru/development">Разработка</a></li>
+    </ul>
+  </li>
+  <li><a href="/ru/faq">FAQ</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/electrum.png" alt="Electrum" />
+    <h1>
+      Electrum
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  Electrum быстр и прост в использовании и требует мало ресурсов. Использует удаленные сервера, которые обрабатывают наиболее сложные операции, позволяет вам восстановить кошелек с помощью пароля.
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ru/wallets/desktop/windows/electrum/">
+        
+          <img src="/img/os/windows.png"
+               alt="Windows"
+               title="Windows" />
+          <span>Windows</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ru/wallets/desktop/mac/electrum/">
+        
+          <img src="/img/os/mac.png"
+               alt="Mac OSX"
+               title="Mac OSX" />
+          <span>Mac OSX</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ru/wallets/desktop/linux/electrum/">
+        
+          <img src="/img/os/linux.png"
+               alt="Linux"
+               title="Linux" />
+          <span>Linux</span>
+        </a>
+        
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn active"
+           href="/ru/wallets/mobile/android/electrum/">
+        
+          <img src="/img/os/android.png"
+               alt="Android"
+               title="Android" />
+          <span>Android</span>
+        </a>
+        
+      
+    </div>
+    
+    
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="android">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/android.png"
+                 alt="Android"
+                 title="Android" />
+            <h3 id="wallets-platform-name">Android</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            
+              <a class="wallet-os-download-link" href="https://play.google.com/store/apps/details?id=org.electrum.electrum">Установить</a>
+            
+            
+              <a class="wallet-os-source-link" href="https://github.com/spesmilo/electrum"> Исходный код</a>
+            
+          </div>
+          <div class="wallet-os-checks">
+            
+            
+            
+              <div class="checkcontrol checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Контроль ваших денег
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Этот кошелек дает вам полный контроль над вашими биткойнами. Это значит, что никто не сможет заморозить ваш счет или потерять ваши деньги. Однако, вы должны помнить о том, что ответственность за безопасность и резервное копирование вашего кошелька полностью лежит на вас.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkvalidation checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Упрощенная проверка
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Этот кошелек использует упрощенную проверку транзакций, с помощью случайного сервера из списка. Это означает, что требуется некоторое доверие к третьим сторонам при проверке платежей. Это не так безопасно как при использовании полного узла, такого как <a href="/ru/download">Bitcoin Core</a>.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checktransparency checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Базовая прозрачность
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Разработчики этого кошелька публикуют исходный код своей программы. Это означает, что любой разработчик в мире может провести аудит кода. Однако, вы все равно должны доверять разработчикам этого кошелька при установке или обновлении ПО, поскольку исполняемый код не создается по фиксированной процедуре, как у <a href="/ru/download"> Bitcoin Core</a>.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkenvironment checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Безопасная среда
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Этот кошелек загружается на мобильные устройства, где приложения, как правило, изолированы. Это обеспечивает хорошую защиту от вредоносных программ, хотя мобильные устройства имеют больше шансов потеряться или быть украденными. Шифрование мобильного устройства и резервное копирование кошелька может уменьшить этот риск.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkprivacy checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Базовая конфиденциальность
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p></p>
+                  
+                    
+                      <div class="checkprivacyaddressreuse checkpass">
+                        <p>Предотвращает слежку за вашими платежами</p>
+                        <p>Этот кошелек затрудняет слежку за вашими балансами и платежами при помощи ротации используемых адресов. Вам следует использовать новый биткойн-адресы каждый раз, когда вы запрашиваете оплату.  </p>
+                      </div>
+                    
+                      <div class="checkprivacydisclosure checkfail">
+                        <p>Раскрывает информацию третьим лицам</p>
+                        <p>Этот сервис может связать вместе ваши платежи, запомнить ваш IP-адрес и хранить вашу личную информацию (имя, е-мейл адрес и банковский счет), если вы ему ее предоставляли.</p>
+                      </div>
+                    
+                      <div class="checkprivacynetwork checkfail">
+                        <p>Tor не поддерживается</p>
+                        <p>Этот кошелек не позволяет вам использовать Tor для того, чтобы помешать злоумышленникам или интернет-провайдерам связать ваши платежи с вашим IP-адресом.</p>
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkfees checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Полный контроль над комиссией
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Этот кошелек дает Вам полный контроль над комиссией. Это значит, что кошелек позволит Вам изменить комиссию после отправки средств с использование RBF или CPFP. Этот кошелек также дает рекомендации по комиссии в зависимости от текущего состояния сети для проведения транзакции вовремя и без переплат.</p>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/electrumandroid.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="walletmenu" id="walletmenu">
+
+  <ul>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-desktop">
+      
+        <a>Компьютер</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-linux">
+            <a href="/ru/wallets/desktop/linux/">
+              Linux
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-mac">
+            <a href="/ru/wallets/desktop/mac/">
+              Mac OSX
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windows">
+            <a href="/ru/wallets/desktop/windows/">
+              Windows
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-hardware">
+      
+      
+        <a href="/ru/wallets/hardware/">Устройство</a>
+      
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-mobile active">
+      
+        <a>Мобильный</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-android active">
+            <a href="/ru/wallets/mobile/android/">
+              Android
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-blackberry">
+            <a href="/ru/wallets/mobile/blackberry/">
+              BlackBerry
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-ios">
+            <a href="/ru/wallets/mobile/ios/">
+              iOS
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windowsphone">
+            <a href="/ru/wallets/mobile/windowsphone/">
+              Windows Phone
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-web">
+      
+      
+        <a href="/ru/wallets/web/">Веб</a>
+      
+      
+    </li>
+  
+  </ul>
+</div>
+
+
+
+<div class="wallet-list" id="wallets">
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/airbitzwallet/">
+      
+        <img src="/img/wallet/airbitzwallet.png" alt="Airbitz Bitcoin Wallet" />
+        Airbitz
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/arcbit/">
+      
+        <img src="/img/wallet/arcbit.png" alt="ArcBit" />
+        ArcBit
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/bitcoinwallet/">
+      
+        <img src="/img/wallet/bitcoinwallet.png" alt="Bitcoin Wallet" />
+        Bitcoin<br>Wallet
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/bither/">
+      
+        <img src="/img/wallet/bither.png" alt="Bither" />
+        Bither
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/breadwallet/">
+      
+        <img src="/img/wallet/breadwallet.png" alt="breadwallet" />
+        breadwallet
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/coinspace/">
+      
+        <img src="/img/wallet/coinspace.png" alt="Coin.Space" />
+        Coin.Space
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/electrum/">
+      
+        <img src="/img/wallet/electrum.png" alt="Electrum" />
+        Electrum
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/greenaddress/">
+      
+        <img src="/img/wallet/greenaddress.png" alt="GreenAddress" />
+        Green<br>Address
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/greenbits/">
+      
+        <img src="/img/wallet/greenbits.png" alt="GreenBits" />
+        GreenBits
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/mycelium/">
+      
+        <img src="/img/wallet/mycelium.png" alt="Mycelium" />
+        Mycelium
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ru/wallets/mobile/android/simplebitcoinwallet/">
+      
+        <img src="/img/wallet/simplebitcoinwallet.png" alt="Simple Bitcoin Wallet" />
+        Simple<br>Bitcoin
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
+
+
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    Потребуется время, чтобы все изучить
+  </h2>
+  <p>
+    Биткойн отличается от того, что вы знаете и используете каждый день. Перед тем, как начать использовать Биткойн для серьезных сделок, непременно прочтите <a href="/ru/you-need-to-know"><b>обязательную информацию</b></a> и примите соответствующие меры <a href="/ru/secure-your-wallet"><b>для обеспечения безопасности вашего кошелька</b></a>. Всегда помните, что правильно выбрать свой ​​кошелек и соблюдать все меры предосторожности для защиты своих денег - это исключительно ваша ответственность.
+  </p>
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/ru/legal">Юридическое</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/ru/press">Пресса</a>
+  <a href="/ru/about-us">О bitcoin.org</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>Веб-сайт сообщества спонсируется</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2017 ПО распространяется под лицензией <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a></div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+</body>
+
+</html>

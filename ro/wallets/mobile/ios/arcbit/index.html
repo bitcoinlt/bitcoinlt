@@ -1,0 +1,824 @@
+<!DOCTYPE HTML>
+<html lang="ro">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ArcBit - Mobil - iOS - Alege portofelul tău - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+<link rel="stylesheet" href="/css/sans.css">
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>Română</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/" class="active">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/ro/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/" selected="selected">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Introducere</a>
+    <ul>
+      <li><a href="/ro/bitcoin-pentru-persoane-fizice">Persoane fizice</a></li>
+      <li><a href="/ro/bitcoin-pentru-companii">Companii</a></li>
+      <li><a href="/ro/bitcoin-pentru-dezvoltatori">Dezvoltatori</a></li>
+      <li><a href="/ro/notiuni-de-baza">Noțiuni de bază</a></li>
+      <li><a href="/ro/cum-functioneaza">Cum funcționează</a></li>
+      <li><a href="/ro/ce-trebuie-sa-stii">Trebuie să știi</a></li>
+    </ul>
+  </li>
+  <li><a>Resurse</a>
+    <ul>
+      <li><a href="/ro/resurse">Resurse</a>
+      
+      <li><a href="/ro/comunitate">Comunitate</a></li>
+      
+      <li><a href="/ro/vocabular">Vocabular</a></li>
+      <li><a href="/ro/evenimente">Evenimente</a></li>
+      
+        <li><a href="/ro/descarca">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/ro/inovatie">Inovaţie</a></li>
+  <li><a>Participă</a>
+    <ul>
+      <li><a href="/ro/sustine-bitcoin">Susţine Bitcoin</a>
+      
+      
+      <li><a href="/ro/dezvoltare">Dezvoltare</a></li>
+    </ul>
+  </li>
+  <li><a href="/ro/intrebari-frecvente">Întrebări Frecvente</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/arcbit.png" alt="ArcBit" />
+    <h1>
+      ArcBit
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  ArcBit is designed to be simple and easy to use, while giving users full control over their money. It offers an optional cold wallet storage feature with the ability to authorize payments offline for enhanced security.
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ro/wallets/desktop/windows/arcbit/">
+        
+          <img src="/img/os/windows.png"
+               alt="Windows"
+               title="Windows" />
+          <span>Windows</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ro/wallets/desktop/mac/arcbit/">
+        
+          <img src="/img/os/mac.png"
+               alt="Mac"
+               title="Mac" />
+          <span>Mac</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ro/wallets/desktop/linux/arcbit/">
+        
+          <img src="/img/os/linux.png"
+               alt="Linux"
+               title="Linux" />
+          <span>Linux</span>
+        </a>
+        
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn active"
+           href="/ro/wallets/mobile/ios/arcbit/">
+        
+          <img src="/img/os/ios.png"
+               alt="iOS"
+               title="iOS" />
+          <span>iOS</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ro/wallets/mobile/android/arcbit/">
+        
+          <img src="/img/os/android.png"
+               alt="Android"
+               title="Android" />
+          <span>Android</span>
+        </a>
+        
+      
+    </div>
+    
+    
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="ios">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/ios.png"
+                 alt="iOS"
+                 title="iOS" />
+            <h3 id="wallets-platform-name">iOS</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            
+              <a class="wallet-os-download-link" href="https://itunes.apple.com/app/arcbit-bitcoin-wallet/id999487888">Instaleaza</a>
+            
+            
+              <a class="wallet-os-source-link" href="https://github.com/arcbit/arcbit-ios"> Codul sursa</a>
+            
+          </div>
+          <div class="wallet-os-checks">
+            
+            
+            
+              <div class="checkcontrol checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Control asupra banilor tăi
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Acest portofel îţi oferă complet control asupra bitcoinilor tăi. Asta înseamnă că fondurile tale nu pot fi blocate sau pierdute de nici o terţă parte. Totuşi, rămâi responsabil pentru securizarea şi procesul de backup al portofelului tău.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkvalidation checkfail"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Verificare centralizată
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Acest portofel se bazează implicit pe un serviciu centralizat. Asta înseamnă încrederea într-o parte terţă că nu va ascunde sau simula tranzacţiile.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checktransparency checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Transparenţă de bază
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Dezvoltatorii acestui portofel publică codul sursă pentru client. Asta înseamnă că orice dezvoltatori din lume poate audită codul. Totuşi, este necesar să ai încredere în dezvoltatorii acestui portofel atunci când instalezi sau faci update la ultima versiune deoarece nu este construit deterministic ca <a href="/ro/descarca">Bitcoin Core</a>.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkenvironment checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Mediu securizat
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Acest portofel este încărcat pe telefoane mobile unde aplicaţiile de obicei sunt izolate. Acest lucru oferă o protecţie bună împotriva malware-ului, deşi telefoanele mobile sunt uşor de furat sau pierdut. Criptarea telefonului tău şi backupul portofelului poate reduce acest risc.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkprivacy checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Confidenţialitate de bază
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p></p>
+                  
+                    
+                      <div class="checkprivacyaddressreuse checkpass">
+                        <p>Previne spionarea tranzactiilor tale</p>
+                        <p>Acest portofel face dificilă spionarea soldului şi plăţilor tale prin rotaţia adreselor. Ar trebui totuşi să ai grijă să foloseşti o adresă Bitcoin nouă de fiecare dată când ceri o plată.</p>
+                      </div>
+                    
+                      <div class="checkprivacydisclosure checkfail">
+                        <p>Divulgă informaţie unei părţi terţe</p>
+                        <p>Acest portofel foloseşte servere centrale ce pot asocia plăţile tale împreună şi înregistra adresa ta IP.</p>
+                      </div>
+                    
+                      <div class="checkprivacynetwork checkfail">
+                        <p>Nu suporta Tor</p>
+                        <p>Acest portofel nu te lasa sa folosesti Tor, pentru a preveni atacuri sau provideri de internet de la asocia plati cu adresa ta IP.</p>
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkfees checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Dynamic fee with override
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>This wallet provides fee suggestions which are based on current network conditions which you can override.  This means that this wallet will help you choose the appropriate fee so that your transactions are confirmed in a timely manner without paying more than you have to, but ultimately gives you control if you want to override the suggestion.</p>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/arcbitios.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="walletmenu" id="walletmenu">
+
+  <ul>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-desktop">
+      
+        <a>Desktop</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-linux">
+            <a href="/ro/wallets/desktop/linux/">
+              Linux
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-mac">
+            <a href="/ro/wallets/desktop/mac/">
+              Mac
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windows">
+            <a href="/ro/wallets/desktop/windows/">
+              Windows
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-hardware">
+      
+      
+        <a href="/ro/wallets/hardware/">Hardware</a>
+      
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-mobile active">
+      
+        <a>Mobil</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-android">
+            <a href="/ro/wallets/mobile/android/">
+              Android
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-blackberry">
+            <a href="/ro/wallets/mobile/blackberry/">
+              BlackBerry
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-ios active">
+            <a href="/ro/wallets/mobile/ios/">
+              iOS
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windowsphone">
+            <a href="/ro/wallets/mobile/windowsphone/">
+              Windows Phone
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-web">
+      
+      
+        <a href="/ro/wallets/web/">Web</a>
+      
+      
+    </li>
+  
+  </ul>
+</div>
+
+
+
+<div class="wallet-list" id="wallets">
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ro/wallets/mobile/ios/airbitzwallet/">
+      
+        <img src="/img/wallet/airbitzwallet.png" alt="Airbitz Bitcoin Wallet" />
+        Airbitz
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ro/wallets/mobile/ios/arcbit/">
+      
+        <img src="/img/wallet/arcbit.png" alt="ArcBit" />
+        ArcBit
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ro/wallets/mobile/ios/bither/">
+      
+        <img src="/img/wallet/bither.png" alt="Bither" />
+        Bither
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ro/wallets/mobile/ios/breadwallet/">
+      
+        <img src="/img/wallet/breadwallet.png" alt="breadwallet" />
+        breadwallet
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ro/wallets/mobile/ios/coinspace/">
+      
+        <img src="/img/wallet/coinspace.png" alt="Coin.Space" />
+        Coin.Space
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ro/wallets/mobile/ios/greenaddress/">
+      
+        <img src="/img/wallet/greenaddress.png" alt="GreenAddress" />
+        Green<br>Address
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
+
+
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    Inainte de toate, invata 
+  </h2>
+  <p>
+    Bitcoin este diferit de ceea ce ştii şi foloseşti zi de zi. Înainte de a începe să foloseşti Bitcoin pentru orice tranzacţie serioasă, citeşte <a href="/ro/ce-trebuie-sa-stii"><b>ce trebuie să ştii</b></a> şi ia masurile necesare pentru a-ţi <a href="/ro/securizeaza-portofelul"><b>securiza portofelul</b></a>. Aminteşte-ţi întotdeauna că este responsabilitatea ta să alegi atent portofelul şi să adopţi obiceiuri bune pentru a-ţi proteja banii.
+  </p>
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/ro/legal">Legal</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/ro/presa">Presă</a>
+  <a href="/ro/despre-noi">Despre bitcoin.org</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>Un site comunitar sponsorizat de</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2017 Lansat sub <a href="http://opensource.org/licenses/mit-license.php" target="_blank">licența MIT</a></div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+</body>
+
+</html>

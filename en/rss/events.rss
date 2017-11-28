@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<!-- Note: this file is built non-deterministically -->
+<channel>
+	<title>Bitcoin conferences and events</title>
+	<link>https://bitcoin.org/en/events</link>
+	<description>This RSS feed allows to follow Bitcoin events and conferences.</description>
+	<image>
+		<title>Bitcoin conferences and events</title>
+		<url>https://bitcoin.org/img/icons/logo_rss.png</url>
+		<link>https://bitcoin.org/en/events</link>
+	</image>
+        
+	
+        <item>
+            <title>Blocktrain 1.0, Bogota - Colombia</title>
+            <link>https://www.blocktrainedu.info/</link>
+            <guid>https://www.blocktrainedu.info/</guid>
+            <pubDate>Fri, 24 Nov 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Blockchain Summit Kyiv, Kiev - Ukraine</title>
+            <link>http://blockchainsummit.com.ua</link>
+            <guid>http://blockchainsummit.com.ua</guid>
+            <pubDate>Sat, 25 Nov 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Blockchain Expo, Santa Clara - United States</title>
+            <link>http://blockchain-expo.com/northamerica/</link>
+            <guid>http://blockchain-expo.com/northamerica/</guid>
+            <pubDate>Wed, 29 Nov 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>BlockShow Asia 2017, Singapore - Singapore</title>
+            <link>http://blockshowasia.com/</link>
+            <guid>http://blockshowasia.com/</guid>
+            <pubDate>Wed, 29 Nov 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>ICO Event Amsterdam, Amsterdam - Netherlands</title>
+            <link>https://icoevent.eu/</link>
+            <guid>https://icoevent.eu/</guid>
+            <pubDate>Wed, 29 Nov 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Blockchain &amp; Bitcoin Conference Cyprus, Nicosia - Cyprus</title>
+            <link>https://blockchainshow.eu/</link>
+            <guid>https://blockchainshow.eu/</guid>
+            <pubDate>Thu, 30 Nov 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Free State Blockchain Digital Assets Conference, Portsmouth, New Hampshire - United States</title>
+            <link>http://blockchainnh.com</link>
+            <guid>http://blockchainnh.com</guid>
+            <pubDate>Fri, 01 Dec 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Blockchain in Africa, Algiers - Algeria</title>
+            <link>https://www.algeria20.com</link>
+            <guid>https://www.algeria20.com</guid>
+            <pubDate>Wed, 06 Dec 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Blockchain and Bitcoin Conference Malta, St Julians - Malta</title>
+            <link>https://malta.blockchainconf.world/en</link>
+            <guid>https://malta.blockchainconf.world/en</guid>
+            <pubDate>Thu, 07 Dec 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Blockchain &amp; Bitcoin Conference Slovenia, Ljubljana - Slovenia</title>
+            <link>https://blockchainconference.si/en</link>
+            <guid>https://blockchainconference.si/en</guid>
+            <pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>CryptoBlockCon 2017, Las Vegas - United States</title>
+            <link>https://www.cryptoblockcon.com/</link>
+            <guid>https://www.cryptoblockcon.com/</guid>
+            <pubDate>Wed, 13 Dec 2017 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Blockchain Cruise Asia 2018, Singapore - Singapore</title>
+            <link>https://coinsbank.com/cruise-asia</link>
+            <guid>https://coinsbank.com/cruise-asia</guid>
+            <pubDate>Mon, 15 Jan 2018 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>The Bitcoin, Ethereum, And Blockchain Superconference, Irving - United States</title>
+            <link>https://www.bitcoinsuperconference.com/</link>
+            <guid>https://www.bitcoinsuperconference.com/</guid>
+            <pubDate>Fri, 16 Feb 2018 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Investir et acheter des bitcoins ou d&apos;autres crypto-monnaies, Paris - France</title>
+            <link>https://achat-bitcoin.fr</link>
+            <guid>https://achat-bitcoin.fr</guid>
+            <pubDate>Sat, 17 Feb 2018 00:00:00 GMT</pubDate>
+        </item>
+	
+        <item>
+            <title>Blockchain West, San Francisco - United States</title>
+            <link>http://blockchainwest.com/san-francisco-2017/</link>
+            <guid>http://blockchainwest.com/san-francisco-2017/</guid>
+            <pubDate>Tue, 27 Mar 2018 00:00:00 GMT</pubDate>
+        </item>
+	
+</channel>
+</rss>

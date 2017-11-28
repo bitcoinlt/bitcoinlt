@@ -1,0 +1,862 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Coin.Space - 모바일 - 안드로이드 - 지갑을 선택하세요 - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+<link rel="stylesheet" href="/css/sans.css">
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>한국의</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/" class="active">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/ko/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/" selected="selected">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>소개</a>
+    <ul>
+      <li><a href="/ko/bitcoin-for-individuals">개인 </a></li>
+      <li><a href="/ko/bitcoin-for-businesses">사업자</a></li>
+      <li><a href="/ko/bitcoin-for-developers">개발자 </a></li>
+      <li><a href="/ko/getting-started">시작하기</a></li>
+      <li><a href="/ko/how-it-works">기본 원리 </a></li>
+      <li><a href="/ko/you-need-to-know">여러분이 알아두어야 할 것</a></li>
+    </ul>
+  </li>
+  <li><a>자료</a>
+    <ul>
+      <li><a href="/ko/resources">자료</a>
+      
+      <li><a href="/ko/community">커뮤니티 </a></li>
+      
+      <li><a href="/ko/vocabulary">용어</a></li>
+      <li><a href="/ko/events">이벤트</a></li>
+      
+        <li><a href="/ko/download">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/ko/innovation">혁신</a></li>
+  <li><a>참여</a>
+    <ul>
+      <li><a href="/ko/support-bitcoin">비트코인을 지지해주세요</a>
+      
+      
+      <li><a href="/ko/development">개발 </a></li>
+    </ul>
+  </li>
+  <li><a href="/ko/faq">질문과답변</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/coinspace.png" alt="Coin.Space" />
+    <h1>
+      Coin.Space
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  Coin.Space HD Wallet is a free online bitcoin wallet, which you can use to make worldwide payments for free. It makes paying with bitcoins easy and secure available anywhere on your phone or desktop.
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn active"
+           href="/ko/wallets/mobile/android/coinspace/">
+        
+          <img src="/img/os/android.png"
+               alt="안드로이드"
+               title="안드로이드" />
+          <span>안드로이드</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ko/wallets/mobile/ios/coinspace/">
+        
+          <img src="/img/os/ios.png"
+               alt="아이오에스"
+               title="아이오에스" />
+          <span>아이오에스</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ko/wallets/mobile/windowsphone/coinspace/">
+        
+          <img src="/img/os/windowsphone.png"
+               alt="Windows Phone"
+               title="Windows Phone" />
+          <span>Windows Phone</span>
+        </a>
+        
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ko/wallets/web/coinspace/">
+        
+          <img src="/img/os/web.png"
+               alt="웹"
+               title="" />
+          <span>웹</span>
+        </a>
+        
+      
+    </div>
+    
+    
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="android">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/android.png"
+                 alt="안드로이드"
+                 title="안드로이드" />
+            <h3 id="wallets-platform-name">안드로이드</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            
+              <a class="wallet-os-download-link" href="https://play.google.com/store/apps/details?id=com.coinspace.app">설치</a>
+            
+            
+              <a class="wallet-os-source-link" href="https://github.com/CoinSpace/CoinSpace"> 소스 코드</a>
+            
+          </div>
+          <div class="wallet-os-checks">
+            
+            
+            
+              <div class="checkcontrol checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  자금 제어하기
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>이 지갑은 귀하에게 비트코인 관리를 제공합니다. 즉, 제 3자가 자금을 동결하거나 날리는 위험이 없다는 것을 의미합니다. 하지만 귀하는 지갑의 보안 및 백업에 관해서는 책임이 있습니다. </p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkvalidation checkfail"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  중앙집중된 검증
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>본 지갑은 자동으로 통합 서비스에 기반을 둡니다. 즉, 제 3자가 결제를 숨기거나 시뮬레이트하지 않는 신뢰가 있어야 합니다.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checktransparency checkfail"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  새로운 앱
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>이 지갑은 상당 수의 사람들에 의해 테스트 및 공개적으로 검토되지 않았습니다. 즉, 이 응용프로그램은 위험한 코드를 숨기거나 동의하지 않은 일을 실행하는 데 더 위험할 확률이 높다는 것을 의미합니다.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkenvironment checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  안전한 환경
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>본 지갑은 응용 프로그램이 통상적으로 격리된 모바일에서 로드됩니다. 모바일이 통상적으로 도용 또는 분실이 더  쉽지만, 본 지갑은 멀웨어에 관해서는 훌륭한 보호 기능을 제공합니다. 모바일 암호화 하기 및 귀하의 지갑을 백업하는 것은 이러한 위험 발생을 줄여줄 수 있습니다.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkprivacy checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  기본 개인 정보
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p></p>
+                  
+                    
+                      <div class="checkprivacyaddressreuse checkpass">
+                        <p>귀하의 결제에 관한 스파이를 방지해줍니다</p>
+                        <p>이 지갑은 주소를 회전함으로서 잔고를 염탐하기 힘들게합니다. 지불금을 요청할 때마다 새로운 Bitcoin 주소를 사용하실 수 있습니다. </p>
+                      </div>
+                    
+                      <div class="checkprivacydisclosure checkfail">
+                        <p>3자에게 정보 공개하기</p>
+                        <p>이 서버는 당신의 지불금과 함께 관련될 수 있으며, 당신의 IP주소로 로그인할 수 있으며, 당신의 이메일, 이름 또는 은행 계좌처럼 개인 정보를 제공하는 경우 당신의 실제 신분을 알 수 있습니다.</p>
+                      </div>
+                    
+                      <div class="checkprivacynetwork checkfail">
+                        <p>Tor가 지원되지 않습니다</p>
+                        <p>이 지갑은 공격이나 당신의 지불금과 IP주소가 관련되어있는 인터넷 서비스 제공자를 막아주는 Tor를 사용할 수 없게 합니다.</p>
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkfees checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Dynamic fee suggestions
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>This wallet provides fee suggestions which are based on current network conditions.  This means that this wallet will help you choose the appropriate fee so that your transactions are confirmed in a timely manner without paying more than you have to.</p>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/coinspacemobile.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="walletmenu" id="walletmenu">
+
+  <ul>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-desktop">
+      
+        <a>데스크탑</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-linux">
+            <a href="/ko/wallets/desktop/linux/">
+              리눅스
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-mac">
+            <a href="/ko/wallets/desktop/mac/">
+              맥
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windows">
+            <a href="/ko/wallets/desktop/windows/">
+              윈도우
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-hardware">
+      
+      
+        <a href="/ko/wallets/hardware/">하드웨어</a>
+      
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-mobile active">
+      
+        <a>모바일</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-android active">
+            <a href="/ko/wallets/mobile/android/">
+              안드로이드
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-blackberry">
+            <a href="/ko/wallets/mobile/blackberry/">
+              블랙베리
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-ios">
+            <a href="/ko/wallets/mobile/ios/">
+              아이오에스
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windowsphone">
+            <a href="/ko/wallets/mobile/windowsphone/">
+              Windows Phone
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-web">
+      
+      
+        <a href="/ko/wallets/web/">웹</a>
+      
+      
+    </li>
+  
+  </ul>
+</div>
+
+
+
+<div class="wallet-list" id="wallets">
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/airbitzwallet/">
+      
+        <img src="/img/wallet/airbitzwallet.png" alt="Airbitz Bitcoin Wallet" />
+        Airbitz
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/arcbit/">
+      
+        <img src="/img/wallet/arcbit.png" alt="ArcBit" />
+        ArcBit
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/bitcoinwallet/">
+      
+        <img src="/img/wallet/bitcoinwallet.png" alt="Bitcoin Wallet" />
+        Bitcoin<br>Wallet
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/bither/">
+      
+        <img src="/img/wallet/bither.png" alt="Bither" />
+        Bither
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/breadwallet/">
+      
+        <img src="/img/wallet/breadwallet.png" alt="breadwallet" />
+        breadwallet
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/coinspace/">
+      
+        <img src="/img/wallet/coinspace.png" alt="Coin.Space" />
+        Coin.Space
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/electrum/">
+      
+        <img src="/img/wallet/electrum.png" alt="Electrum" />
+        Electrum
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/greenaddress/">
+      
+        <img src="/img/wallet/greenaddress.png" alt="GreenAddress" />
+        Green<br>Address
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/greenbits/">
+      
+        <img src="/img/wallet/greenbits.png" alt="GreenBits" />
+        GreenBits
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/mycelium/">
+      
+        <img src="/img/wallet/mycelium.png" alt="Mycelium" />
+        Mycelium
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/mobile/android/simplebitcoinwallet/">
+      
+        <img src="/img/wallet/simplebitcoinwallet.png" alt="Simple Bitcoin Wallet" />
+        Simple<br>Bitcoin
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
+
+
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    천천히 학습해보세요
+  </h2>
+  <p>
+    비트코인은 당신이 알고 매일 사용하는 타사와 다릅니다. 중요한 거래를 위해 비트코인을 사용하기 시작하시기 전에,  <a href="/ko/you-need-to-know"><b>알고계셔야 하는 것</b></a>을 반드시 읽어주세요, 그리고 <a href="/ko/secure-your-wallet"><b>지갑 보호하기</b></a>의 올바른 단계를 따라주세요. 지갑을 조심스럽게 선택하고, 돈을 보호하기위한 좋은 실천사항을 따르는 것은 당신의 책임입니다.
+  </p>
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/ko/legal">법적 고지</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/ko/press">기사</a>
+  <a href="/ko/about-us">bitcoin.org 소개</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>이 커뮤니티 웹사이트의 후원자</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2017 <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT 라이센스</a>에 따라 배포되었습니다.</div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+</body>
+
+</html>

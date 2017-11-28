@@ -1,0 +1,792 @@
+<!DOCTYPE HTML>
+<html lang="zh_TW">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Coin.Space - 網頁 - 選擇你的錢包 - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+<link rel="stylesheet" href="/css/sans.css">
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>繁體中文</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/" class="active">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/zh_TW/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/" selected="selected">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>介紹</a>
+    <ul>
+      <li><a href="/zh_TW/bitcoin-for-individuals">個人</a></li>
+      <li><a href="/zh_TW/bitcoin-for-businesses">商務</a></li>
+      <li><a href="/zh_TW/bitcoin-for-developers">開發人員</a></li>
+      <li><a href="/zh_TW/getting-started">開始使用</a></li>
+      <li><a href="/zh_TW/how-it-works">運作原理</a></li>
+      <li><a href="/zh_TW/you-need-to-know">使用須知</a></li>
+    </ul>
+  </li>
+  <li><a>資源</a>
+    <ul>
+      <li><a href="/zh_TW/resources">資源</a>
+      
+      <li><a href="/zh_TW/community">社群</a></li>
+      
+      <li><a href="/zh_TW/vocabulary">詞彙</a></li>
+      <li><a href="/zh_TW/events">活動</a></li>
+      
+        <li><a href="/zh_TW/download">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/zh_TW/innovation">創新</a></li>
+  <li><a>參與</a>
+    <ul>
+      <li><a href="/zh_TW/support-bitcoin">支持 Bitcoin</a>
+      
+      
+      <li><a href="/zh_TW/development">開發</a></li>
+    </ul>
+  </li>
+  <li><a href="/zh_TW/faq">常見問題</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/coinspace.png" alt="Coin.Space" />
+    <h1>
+      Coin.Space
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  Coin.Space HD Wallet is a free online bitcoin wallet, which you can use to make worldwide payments for free. It makes paying with bitcoins easy and secure available anywhere on your phone or desktop.
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/zh_TW/wallets/mobile/android/coinspace/">
+        
+          <img src="/img/os/android.png"
+               alt="Android"
+               title="Android" />
+          <span>Android</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/zh_TW/wallets/mobile/ios/coinspace/">
+        
+          <img src="/img/os/ios.png"
+               alt="iOS"
+               title="iOS" />
+          <span>iOS</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/zh_TW/wallets/mobile/windowsphone/coinspace/">
+        
+          <img src="/img/os/windowsphone.png"
+               alt="Windows Phone"
+               title="Windows Phone" />
+          <span>Windows Phone</span>
+        </a>
+        
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn active"
+           href="/zh_TW/wallets/web/coinspace/">
+        
+          <img src="/img/os/web.png"
+               alt="網頁"
+               title="" />
+          <span>網頁</span>
+        </a>
+        
+      
+    </div>
+    
+    
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="web">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/web.png"
+                 alt="網頁"
+                 title="" />
+            <h3 id="wallets-platform-name">網頁</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            
+              <a class="wallet-os-download-link" href="https://coin.space">前往網站</a>
+            
+            
+              <a class="wallet-os-source-link" href="https://github.com/CoinSpace/CoinSpace"> 原始碼</a>
+            
+          </div>
+          <div class="wallet-os-checks">
+            
+            
+            
+              <div class="checkcontrol checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  對你的金錢的掌控權限
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>使用這種錢包能讓你完全掌控你的比特幣，這表示沒有第三者能凍結或丟失你的資金。然而，你依然要對錢包的安全以及備份自行負責。</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkvalidation checkfail"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  集中驗證
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>這個錢包依賴一個默認的集中的服務。这意味着一个第三方必須被信任不會隱藏或模擬支付。</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checktransparency checkfail"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  遠程應用程式
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>這款錢包從一個遠程地點加載。這意味著不管您什麽時候使用你的錢包，您都需要信任開發者們不會因為他們導致的一次事故而盜竊或丟失您的比特幣。如果可以的話，使用瀏覽器擴展功能或行動手機應用程式可以降低這個風險。</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkenvironment checkfail"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  脆弱的環境
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>這款錢包可以加載在電腦上。電腦容易受到惡意軟體的攻擊。保障您的電腦安全，使用一個很強的密碼，把您的大部份資金轉移到冷儲存或開通雙重認證，這些都能讓偷竊您的比特幣變得難上加難。</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkprivacy checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  基本的隱秘性
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p></p>
+                  
+                    
+                      <div class="checkprivacyaddressreuse checkpass">
+                        <p>防止對您的支付的窺視</p>
+                        <p>這款錢包通過滾動地址讓窺視您的餘額和支付變得難上加難。但您還是應當小心地在每次請求支付的時候使用一個新的 Bitcoin 地址。</p>
+                      </div>
+                    
+                      <div class="checkprivacydisclosure checkfail">
+                        <p>洩露資訊給第三方</p>
+                        <p>這個服務可以把您的支付聯繫起來，記錄您的 IP 地址，如果您提供了個人資訊如信箱、名字或銀行帳戶的話，它還會知道您的真實身份。</p>
+                      </div>
+                    
+                      <div class="checkprivacynetwork checkpass">
+                        <p>Tor 可以用來</p>
+                        <p>這款錢包讓您建立和使用<a href="https://www.torproject.org/">Tor</a>并把它作為一個代理來防止攻擊者或網路服務供應商把您的支付和您的 IP 地址聯繫起來。</p>
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkfees checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Dynamic fee suggestions
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>This wallet provides fee suggestions which are based on current network conditions.  This means that this wallet will help you choose the appropriate fee so that your transactions are confirmed in a timely manner without paying more than you have to.</p>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/coinspaceweb.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="walletmenu" id="walletmenu">
+
+  <ul>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-desktop">
+      
+        <a>桌面</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-linux">
+            <a href="/zh_TW/wallets/desktop/linux/">
+              Linux
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-mac">
+            <a href="/zh_TW/wallets/desktop/mac/">
+              Mac
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windows">
+            <a href="/zh_TW/wallets/desktop/windows/">
+              Windows
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-hardware">
+      
+      
+        <a href="/zh_TW/wallets/hardware/">硬體</a>
+      
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-mobile">
+      
+        <a>行動電話</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-android">
+            <a href="/zh_TW/wallets/mobile/android/">
+              Android
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-blackberry">
+            <a href="/zh_TW/wallets/mobile/blackberry/">
+              BlackBerry
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-ios">
+            <a href="/zh_TW/wallets/mobile/ios/">
+              iOS
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windowsphone">
+            <a href="/zh_TW/wallets/mobile/windowsphone/">
+              Windows Phone
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-web active">
+      
+      
+        <a href="/zh_TW/wallets/web/">網頁</a>
+      
+      
+    </li>
+  
+  </ul>
+</div>
+
+
+
+<div class="wallet-list" id="wallets">
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/zh_TW/wallets/web/bitgo/">
+      
+        <img src="/img/wallet/bitgo.png" alt="BitGo" />
+        BitGo
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="4">
+      
+      <a class="wallet-list-item-link"
+         href="/zh_TW/wallets/web/coinapult/">
+      
+        <img src="/img/wallet/coinapult.png" alt="Coinapult" />
+        Coinapult
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/zh_TW/wallets/web/coinspace/">
+      
+        <img src="/img/wallet/coinspace.png" alt="Coin.Space" />
+        Coin.Space
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/zh_TW/wallets/web/greenaddress/">
+      
+        <img src="/img/wallet/greenaddress.png" alt="GreenAddress" />
+        Green<br>Address
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
+
+
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    花時間自學
+  </h2>
+  <p>
+    Bitcoin 和您所知道的和每天使用的東西不一樣。在您開始使用 Bitcoin 來進行任何正式的交易之前，請務必閱讀<a href="/zh_TW/you-need-to-know"><b>您必須瞭解的資訊</b></a>并採取正確的步驟來<a href="/zh_TW/secure-your-wallet"><b>保障您的錢包安全</b></a>。總是要記住，小心選擇您的錢包并採取有效的措施來保護您的錢是您的責任。
+  </p>
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/zh_TW/legal">合法</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/zh_TW/press">新聞媒體</a>
+  <a href="/zh_TW/about-us">關於 bitcoin.org</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>一個由其贊助的社群網站</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2017 以 <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT 授權</a>發佈</div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+</body>
+
+</html>

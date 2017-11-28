@@ -1,0 +1,737 @@
+<!DOCTYPE HTML>
+<html lang="hi">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Trezor - हार्डवेयर - अपना बटुआ चुनें - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+<link rel="stylesheet" href="/css/sans.css">
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>हिन्दी</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/" class="active">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/hi/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/" selected="selected">हिन्दी</option>
+    
+          <option value="/ko/">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>परिचय</a>
+    <ul>
+      <li><a href="/hi/bitcoin-for-individuals">व्यक्तिगत</a></li>
+      <li><a href="/hi/bitcoin-for-businesses">व्यवसाय</a></li>
+      <li><a href="/hi/bitcoin-for-developers">डेवलपर्स</a></li>
+      <li><a href="/hi/getting-started"> प्रारंभ करें</a></li>
+      <li><a href="/hi/how-it-works">यह कैसे काम करता है</a></li>
+      <li><a href="/hi/you-need-to-know">आपको पता होना चाहिए </a></li>
+    </ul>
+  </li>
+  <li><a>संसाधन</a>
+    <ul>
+      <li><a href="/hi/resources">संसाधन</a>
+      
+      <li><a href="/hi/community">समुदाय</a></li>
+      
+      <li><a href="/hi/vocabulary">शब्दावली</a></li>
+      <li><a href="/hi/events">कार्यक्रम</a></li>
+      
+        <li><a href="/hi/download">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/hi/innovation">अभिनव</a></li>
+  <li><a>भाग लें</a>
+    <ul>
+      <li><a href="/hi/support-bitcoin">Bitcoin समर्थन करें</a>
+      
+      
+      <li><a href="/hi/development">विकास</a></li>
+    </ul>
+  </li>
+  <li><a href="/hi/faq">अक्सर पूछे जाने वाले प्रश्न</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/trezor.png" alt="Trezor" />
+    <h1>
+      Trezor
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  Trezor, सुविधा का त्याग किए बिना आपको एक उच्च स्तर की सुरक्षा देने वाला हार्डवेयर बटुआ है। Trezor आपको  किसी ऑनलाइन उपकरण से जुड़ने पर लेनदेन पर हस्ताक्षर सक्षम करता है। इसका मतलब है कि ​​किसी भी कंप्यूटर से इसके द्वारा bitcoins खर्च करना सुरक्षित होता है।
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn active"
+           href="/hi/wallets/hardware/trezor/">
+        
+          <img src="/img/os/hardware.png"
+               alt="हार्डवेयर"
+               title="" />
+          <span>हार्डवेयर</span>
+        </a>
+        
+      
+    </div>
+    
+    
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="hardware">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/hardware.png"
+                 alt="हार्डवेयर"
+                 title="" />
+            <h3 id="wallets-platform-name">हार्डवेयर</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            
+              <a class="wallet-os-download-link" href="https://trezor.io/">वेब साईट पर जाएं</a>
+            
+            
+              <a class="wallet-os-source-link" href="https://github.com/trezor/"> सोर्स कोड</a>
+            
+          </div>
+          <div class="wallet-os-checks">
+            
+            
+            
+              <div class="checkcontrol checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  अपने धन पर नियंत्रण
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>इस बटुए आपको अपने bitcoins पर पूरा नियंत्रण देता है। इसका मतलब यह है कि कोई तीसरा पक्ष आपके धन को खो या इस्तेमालबद्ध नही कर सकता। फिर भी अपने बटुए को समर्थन और बैकअप आपकी जिम्मेदारी है। </p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkvalidation checkneutral"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  परिवर्ती प्रमाणीकरण
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>सॉफ्टवेयर बटुआ जो आप  इस उपकरण के साथ उपयोग करते हैं, आपको भुगतान प्रमाणीकरण सुविधाएं प्रदान करता  हैं। जिस सॉफ्टवेयर बटुए के उपयोग करने की योजना कर रहे हैं, कृपया उसकी मान्यता स्कोर देखें।  </p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checktransparency checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  सम्पूर्ण स्पष्टवादिता 
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>यह बटुआ ओपन-सोर्स है और निर्धारक तरिके से बनाया गया है। इसका मतलब यह है कि विष्व में कोई भी डेवलपर  इस कोड की लेखापरीक्षा कर सकता हैं और यह सुनिशच्ति कर सकता है कि स्फॉटवेयर कोई रहस्य छिपा नही रहा है। </p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkenvironment checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  अत्यन्त सुरक्षित वातावरण 
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>डिवाइस के द्वारा प्रदान किए विशेष सुरक्षित परिस्थिति से इस बटुए को लोड किया गया है। यह, कंप्यूटर कमजोरियों और मालवेयर के खिलाफ बहुत मजबूत सुरक्षा प्रदान करता है क्योंकि कोई अन्य साफ्टवेयर इस पर स्थापित नही किया जा सकता। </p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkprivacy checkneutral"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  परिवर्ती गोपनीयता
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>सॉफ्टवेयर बटुआ जो इस उपकरण पर उपयोग करते हैं, आपको गोपनीयता सुविधा प्रदान करता हैं। जिस सॉफ्टवेयर बटुए का उपयोग करने की योजना कर रहे हैं, कृपया उसकी गोपनीयता स्कोर जांच कर देखें।</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkfees checkneutral"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Variable fee control
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Fee control features are provided by the software wallet you use with this device. Please see the Fee Control score for the software wallet you plan to use.</p>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/trezor.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="walletmenu" id="walletmenu">
+
+  <ul>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-desktop">
+      
+        <a>डेस्कटॉप</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-linux">
+            <a href="/hi/wallets/desktop/linux/">
+              Linux
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-mac">
+            <a href="/hi/wallets/desktop/mac/">
+              Mac
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windows">
+            <a href="/hi/wallets/desktop/windows/">
+              Windows
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-hardware active">
+      
+      
+        <a href="/hi/wallets/hardware/">हार्डवेयर</a>
+      
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-mobile">
+      
+        <a>मोबाइल</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-android">
+            <a href="/hi/wallets/mobile/android/">
+              Android
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-blackberry">
+            <a href="/hi/wallets/mobile/blackberry/">
+              BlackBerry
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-ios">
+            <a href="/hi/wallets/mobile/ios/">
+              iOS
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windowsphone">
+            <a href="/hi/wallets/mobile/windowsphone/">
+              Windows Phone
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-web">
+      
+      
+        <a href="/hi/wallets/web/">वेब</a>
+      
+      
+    </li>
+  
+  </ul>
+</div>
+
+
+
+<div class="wallet-list" id="wallets">
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/hi/wallets/hardware/digitalbitbox/">
+      
+        <img src="/img/wallet/digitalbitbox.png" alt="DigitalBitbox" />
+        Digital<br />Bitbox
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/hi/wallets/hardware/keepkey/">
+      
+        <img src="/img/wallet/keepkey.png" alt="KeepKey" />
+        KeepKey
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/hi/wallets/hardware/ledgernanos/">
+      
+        <img src="/img/wallet/ledgernanos.png" alt="Ledger Nano S" />
+        Ledger<br>Nano S
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/hi/wallets/hardware/trezor/">
+      
+        <img src="/img/wallet/trezor.png" alt="Trezor" />
+        Trezor
+      </a>
+    </div>
+  
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
+
+
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    ज्ञान प्राप्त करने के लिए थोड़ा वक़्त बिताएं 
+  </h2>
+  <p>
+    आप जो जानते हैं और हर दिन उपयोग करते हैं उससे Bitcoin अलग है। किसी भी गंभीर लेनदेन के उपयोग के लिए  Bitcoin का उपयोग शुरु करने से पहले पक्का करें की आप निम्न पढ़े <a href="/hi/you-need-to-know"><b>तुम्हें क्या जानना जरूरी है</b></a> और उचित कदम उठाएं<a href="/hi/secure-your-wallet"><b>अपने बटुए को सुरक्षित करने के लिए </b></a> हमेशा यह ध्यान रखें कि अपने पैसे को  सुक्षित रखने के लिए सही बटुए का चयन करना और अच्छा व्यवहार अपनाना आपकी जिम्मेदारी है। 
+  </p>
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/hi/legal">कानूनी</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/hi/press">प्रेस</a>
+  <a href="/hi/about-us">bitcoin.org के बारे में</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span> समुदाय वेबसाइट प्रायोजित किया गया निम्न के द्वारा</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2017  <a href="http://opensource.org/licenses/mit-license.php" target="_blank"> MIT लाइसेंस </a> के तहत जारी किया गया है </div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+</body>
+
+</html>

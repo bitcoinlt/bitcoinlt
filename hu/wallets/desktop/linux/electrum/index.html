@@ -1,0 +1,842 @@
+<!DOCTYPE HTML>
+<html lang="hu">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Electrum - Asztali gép - Linux - Válasszon pénztárcát - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>Magyar</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/" class="active">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/hu/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/" selected="selected">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Bevezetés</a>
+    <ul>
+      <li><a href="/hu/bitcoin-maganszemelyeknek">Magánszemélyek</a></li>
+      <li><a href="/hu/bitcoin-vallalkozasoknak">Vállalkozások</a></li>
+      <li><a href="/hu/bitcoin-fejlesztoknek">Fejlesztők</a></li>
+      <li><a href="/hu/vagjon-bele">Vágjon bele</a></li>
+      <li><a href="/hu/hogyan-mukodik">Hogyan működik</a></li>
+      <li><a href="/hu/amit-tudnia-erdemes">Érdemes tudnia</a></li>
+    </ul>
+  </li>
+  <li><a>Információs anyagok</a>
+    <ul>
+      <li><a href="/hu/informacios-anyagok">Információs anyagok</a>
+      
+      <li><a href="/hu/kozosseg">Közösség</a></li>
+      
+      <li><a href="/hu/szotar">Szótár</a></li>
+      <li><a href="/hu/rendezvenyek">Rendezvények</a></li>
+      
+        <li><a href="/hu/letoltes">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/hu/innovacio">Innováció</a></li>
+  <li><a>Részvétel</a>
+    <ul>
+      <li><a href="/hu/tamogassa-a-bitcoint">Támogassa a Bitcoint</a>
+      
+      
+      <li><a href="/hu/fejlesztes">Fejlesztés</a></li>
+    </ul>
+  </li>
+  <li><a href="/hu/gyik">GYIK</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/electrum.png" alt="Electrum" />
+    <h1>
+      Electrum
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  Az Electrum fókuszában a sebesség és az egyszerűség áll, alacsony erőforrás-használattal párosulva. Távoli szervereket használ a Bitcoin rendszere legbonyolultabb részeinek kezeléshez, és lehetővé teszi pénztárcája visszaállítását egy titkos szó(kapcsolat) segítségével.
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/hu/wallets/desktop/windows/electrum/">
+        
+          <img src="/img/os/windows.png"
+               alt="Windows"
+               title="Windows" />
+          <span>Windows</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/hu/wallets/desktop/mac/electrum/">
+        
+          <img src="/img/os/mac.png"
+               alt="Mac"
+               title="Mac" />
+          <span>Mac</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn active"
+           href="/hu/wallets/desktop/linux/electrum/">
+        
+          <img src="/img/os/linux.png"
+               alt="Linux"
+               title="Linux" />
+          <span>Linux</span>
+        </a>
+        
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/hu/wallets/mobile/android/electrum/">
+        
+          <img src="/img/os/android.png"
+               alt="Android"
+               title="Android" />
+          <span>Android</span>
+        </a>
+        
+      
+    </div>
+    
+    
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="linux">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/linux.png"
+                 alt="Linux"
+                 title="Linux" />
+            <h3 id="wallets-platform-name">Linux</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            
+              <a class="wallet-os-download-link" href="https://electrum.org">Tovább a weboldalra</a>
+            
+            
+              <a class="wallet-os-source-link" href="https://github.com/spesmilo/electrum"> Forráskód</a>
+            
+          </div>
+          <div class="wallet-os-checks">
+            
+            
+            
+              <div class="checkcontrol checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Kontroll a pénze felett
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Ez a pénztárca teljes kontrollt biztosít Önnek a bitcoinjai felett. Ez azt jelenti, hogy harmadik fél nem fagyaszthatja be vagy veszítheti el a pénzét. Ugyanakkor Ön továbbra is felelős a pénztárcája védelméért és biztonsági mentéseiért.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkvalidation checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Egyszerűsített érvényesítés
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Ez a pénztárca SPV-t és egy listából véletlenszerűen kiválasztott szervert használ. Ez azt jelenti, hogy külső felek szükségesek a kifizetések hitelesítéséhez. Ugyanakkor ez a megoldás nem olyan biztonságos, mint a teljes csomópontok, mint például a <a href="/hu/letoltes">Bitcoin Core</a>.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checktransparency checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Alapvető transzparencia
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>E pénztárca fejlesztői az ügyfelek számára publikálják a forráskódot. Ez azt jelenti, hogy a világ bármely fejlesztője auditálhatja a kódot. Ugyanakkor továbbra is bíznia kell a fejlesztőkben a végső szoftver telepítésekor és frissítésekor, mivel nem determinisztikus felépítésű, mint például a <a href="/hu/letoltes">Bitcoin Core</a>.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkenvironment checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Kétlépcsős hitelesítés
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Ez a pénztárca nem biztonságos környezetben használható. Ugyanakkor ez a szolgáltatás kétlépcsős hitelesítést kíván meg. Ez azt jelenti, hogy a bitcoinjai ellopásához több készülékhez vagy fiókhoz történő hozzáférés szükséges.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkprivacy checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Alapvető személyesadat-védelem
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p></p>
+                  
+                    
+                      <div class="checkprivacyaddressreuse checkpass">
+                        <p>Megakadályozza a kifizetései utáni kémkedést</p>
+                        <p>Ez a pénztárca a címek váltogatásával nehezebbé teszi az egyenlege után való kémkedést. Továbbra is érdemes figyelnie arra, hogy az minden egyes kifizetés igénylése esetén új címet használjon.</p>
+                      </div>
+                    
+                      <div class="checkprivacydisclosure checkfail">
+                        <p>Harmadik fél számára információt fed fel</p>
+                        <p>Ez a pénztárca központi szervereket használ, amelyek összeköthetik a kifizetéseit és naplózhatják az IP-címét.</p>
+                      </div>
+                    
+                      <div class="checkprivacynetwork checkpass">
+                        <p>Tor használható</p>
+                        <p>Ez a pénztárca megengedi, hogy a <a href="https://www.torproject.org/">Tort</a> proxyként állítsa be és használja annak megakadályozására, hogy támadók vagy internetszolgáltatók hozzárendeljék az IP-címét a kifizetéseihez.</p>
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkfees checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Full control over fees
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>This wallet gives you full control over fees. This means that this wallet allows changing the fees after funds are sent using RBF or CPFP.  This wallet also provides fee suggestions based on current network conditions so that your transactions are confirmed in a timely manner without paying more than you have to.</p>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/electrum.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="walletmenu" id="walletmenu">
+
+  <ul>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-desktop active">
+      
+        <a>Asztali gép</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-linux active">
+            <a href="/hu/wallets/desktop/linux/">
+              Linux
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-mac">
+            <a href="/hu/wallets/desktop/mac/">
+              Mac
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windows">
+            <a href="/hu/wallets/desktop/windows/">
+              Windows
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-hardware">
+      
+      
+        <a href="/hu/wallets/hardware/">Hardver</a>
+      
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-mobile">
+      
+        <a>Mobil</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-android">
+            <a href="/hu/wallets/mobile/android/">
+              Android
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-blackberry">
+            <a href="/hu/wallets/mobile/blackberry/">
+              BlackBerry
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-ios">
+            <a href="/hu/wallets/mobile/ios/">
+              iOS
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windowsphone">
+            <a href="/hu/wallets/mobile/windowsphone/">
+              Windows Phone
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-web">
+      
+      
+        <a href="/hu/wallets/web/">Web</a>
+      
+      
+    </li>
+  
+  </ul>
+</div>
+
+
+
+<div class="wallet-list" id="wallets">
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/hu/wallets/desktop/linux/arcbit/">
+      
+        <img src="/img/wallet/arcbit.png" alt="ArcBit" />
+        ArcBit
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/hu/wallets/desktop/linux/armory/">
+      
+        <img src="/img/wallet/armory.png" alt="Armory" />
+        Armory
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="1">
+      
+      <a class="wallet-list-item-link"
+         href="/hu/wallets/desktop/linux/bitcoincore/">
+      
+        <img src="/img/wallet/bitcoincore.png" alt="Bitcoin Core" />
+        Bitcoin<br>Core
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="1">
+      
+      <a class="wallet-list-item-link"
+         href="/hu/wallets/desktop/linux/bitcoinknots/">
+      
+        <img src="/img/wallet/bitcoinknots.png" alt="Bitcoin Knots" />
+        Bitcoin<br>Knots
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/hu/wallets/desktop/linux/bitgo/">
+      
+        <img src="/img/wallet/bitgo.png" alt="BitGo" />
+        BitGo
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/hu/wallets/desktop/linux/bither/">
+      
+        <img src="/img/wallet/bither.png" alt="Bither" />
+        Bither
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/hu/wallets/desktop/linux/electrum/">
+      
+        <img src="/img/wallet/electrum.png" alt="Electrum" />
+        Electrum
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/hu/wallets/desktop/linux/greenaddress/">
+      
+        <img src="/img/wallet/greenaddress.png" alt="GreenAddress" />
+        Green<br>Address
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/hu/wallets/desktop/linux/msigna/">
+      
+        <img src="/img/wallet/msigna.png" alt="mSIGNA" />
+        mSIGNA
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
+
+
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    Szánjon időt a tájékozódásra
+  </h2>
+  <p>
+    A Bitcoin különbözik attól, amit ismer és nap mint nap használ. Mielőtt a Bitcoint bármilyen komoly tranzakcióra használná, olvassa el azt a <a href="/hu/amit-tudnia-erdemes"><b>néhány dolgot, amelyet érdemes tudnia</b></a>, valamint tegyen lépéseket a <a href="/hu/vedje-meg-penztarcajat"><b>pénztárcája biztosítására</b></a>. Soha ne feledje, hogy az Ön felelőssége, hogy gondosan kiválassza a pénztárcáját, és jó gyakorlatokat sajátítson el a pénze védelmére.
+  </p>
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/hu/jogi-vonatkozasok">Jogi vonatkozások</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/hu/sajto">Sajtó</a>
+  <a href="/hu/rolunk">A bitcoin.org-ról</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>E közösségi weboldal szponzora a</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2017 Az <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT licence</a> alatt közzétéve</div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+</body>
+
+</html>

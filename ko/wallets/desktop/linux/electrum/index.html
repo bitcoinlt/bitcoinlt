@@ -1,0 +1,842 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Electrum - 데스크탑 - 리눅스 - 지갑을 선택하세요 - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+<link rel="stylesheet" href="/css/sans.css">
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>한국의</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/" class="active">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/ko/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/" selected="selected">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>소개</a>
+    <ul>
+      <li><a href="/ko/bitcoin-for-individuals">개인 </a></li>
+      <li><a href="/ko/bitcoin-for-businesses">사업자</a></li>
+      <li><a href="/ko/bitcoin-for-developers">개발자 </a></li>
+      <li><a href="/ko/getting-started">시작하기</a></li>
+      <li><a href="/ko/how-it-works">기본 원리 </a></li>
+      <li><a href="/ko/you-need-to-know">여러분이 알아두어야 할 것</a></li>
+    </ul>
+  </li>
+  <li><a>자료</a>
+    <ul>
+      <li><a href="/ko/resources">자료</a>
+      
+      <li><a href="/ko/community">커뮤니티 </a></li>
+      
+      <li><a href="/ko/vocabulary">용어</a></li>
+      <li><a href="/ko/events">이벤트</a></li>
+      
+        <li><a href="/ko/download">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/ko/innovation">혁신</a></li>
+  <li><a>참여</a>
+    <ul>
+      <li><a href="/ko/support-bitcoin">비트코인을 지지해주세요</a>
+      
+      
+      <li><a href="/ko/development">개발 </a></li>
+    </ul>
+  </li>
+  <li><a href="/ko/faq">질문과답변</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/electrum.png" alt="Electrum" />
+    <h1>
+      Electrum
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  Electrum의 초점은 적은 자원소모, 간편함, 그리고 속도입니다. 원격 서버들을 이용해 비트코인의 가장 복잡한 부분들을 관리하며 비밀구절을 사용하여 당신의 지갑을 복구할 수 있게 해주는 기능을 제공합니다.
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ko/wallets/desktop/windows/electrum/">
+        
+          <img src="/img/os/windows.png"
+               alt="윈도우"
+               title="윈도우" />
+          <span>윈도우</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ko/wallets/desktop/mac/electrum/">
+        
+          <img src="/img/os/mac.png"
+               alt="맥"
+               title="맥" />
+          <span>맥</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn active"
+           href="/ko/wallets/desktop/linux/electrum/">
+        
+          <img src="/img/os/linux.png"
+               alt="리눅스"
+               title="리눅스" />
+          <span>리눅스</span>
+        </a>
+        
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/ko/wallets/mobile/android/electrum/">
+        
+          <img src="/img/os/android.png"
+               alt="안드로이드"
+               title="안드로이드" />
+          <span>안드로이드</span>
+        </a>
+        
+      
+    </div>
+    
+    
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="linux">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/linux.png"
+                 alt="리눅스"
+                 title="리눅스" />
+            <h3 id="wallets-platform-name">리눅스</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            
+              <a class="wallet-os-download-link" href="https://electrum.org">웹사이트 방문</a>
+            
+            
+              <a class="wallet-os-source-link" href="https://github.com/spesmilo/electrum"> 소스 코드</a>
+            
+          </div>
+          <div class="wallet-os-checks">
+            
+            
+            
+              <div class="checkcontrol checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  자금 제어하기
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>이 지갑은 귀하에게 비트코인 관리를 제공합니다. 즉, 제 3자가 자금을 동결하거나 날리는 위험이 없다는 것을 의미합니다. 하지만 귀하는 지갑의 보안 및 백업에 관해서는 책임이 있습니다. </p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkvalidation checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  간소화 유효성 검증
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>본 지갑은 목록에서 SPV 및 임의 서버를 사용합니다. 즉, 결제를 확인할 때 제 3자의 매우 적은 신뢰가 필요하지 않다는 것을 의미합니다. 하지만, <a href="/ko/download">비트코인 코어</a>와 같이 풀 노드만큼 보안상 안전하지 않을 수 있습니다.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checktransparency checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  기본 투명성
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>본 지갑의 개발자는 사용자의 소스 코드를 게시할 수 있습니다. 즉, 전 세계의 개발자 누구든 이 소스 코드를 검사할 수 있음을 의미합니다. 하지만, 본 지갑이 결정적으로 <a href="/ko/download">비트코인 코어</a> 같이 구축되지 않았기 때문에 최종 소프트웨어를 설치하거나 업데이트할 시 본 지갑의 개발자를 신뢰해야 합니다. </p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkenvironment checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  이중 인증
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>본 지갑은 안전하지 않은 환경에서 사용될 수 있습니다. 하지만, 본 서비스는 이중 인증을 필요로 합니다. 즉, 귀하의 비트코인을 도용하기 위해서는 여러 장치 또는 계정에 액세스 권한이 필요하는 것을 의미합니다.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkprivacy checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  기본 개인 정보
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p></p>
+                  
+                    
+                      <div class="checkprivacyaddressreuse checkpass">
+                        <p>귀하의 결제에 관한 스파이를 방지해줍니다</p>
+                        <p>이 지갑은 주소를 회전함으로서 잔고를 염탐하기 힘들게합니다. 지불금을 요청할 때마다 새로운 Bitcoin 주소를 사용하실 수 있습니다. </p>
+                      </div>
+                    
+                      <div class="checkprivacydisclosure checkfail">
+                        <p>3자에게 정보 공개하기</p>
+                        <p>이 지갑은 당신의 지불금과 관련될 수 있는 중심 서버를 사용하며, 귀하의 IP 주소로 로그인합니다.</p>
+                      </div>
+                    
+                      <div class="checkprivacynetwork checkpass">
+                        <p>Tor가 사용될 수 있습니다</p>
+                        <p>이 지갑은 <a href="https://www.torproject.org/">Tor</a>를 공격을 예방하는 프록시 또는 당신의 지불금과 IP주소가 관련된 인터넷 서비스 제공자로 설치를 하거나 사용할 수 있게 해드립니다. </p>
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkfees checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Full control over fees
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>This wallet gives you full control over fees. This means that this wallet allows changing the fees after funds are sent using RBF or CPFP.  This wallet also provides fee suggestions based on current network conditions so that your transactions are confirmed in a timely manner without paying more than you have to.</p>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/electrum.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="walletmenu" id="walletmenu">
+
+  <ul>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-desktop active">
+      
+        <a>데스크탑</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-linux active">
+            <a href="/ko/wallets/desktop/linux/">
+              리눅스
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-mac">
+            <a href="/ko/wallets/desktop/mac/">
+              맥
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windows">
+            <a href="/ko/wallets/desktop/windows/">
+              윈도우
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-hardware">
+      
+      
+        <a href="/ko/wallets/hardware/">하드웨어</a>
+      
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-mobile">
+      
+        <a>모바일</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-android">
+            <a href="/ko/wallets/mobile/android/">
+              안드로이드
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-blackberry">
+            <a href="/ko/wallets/mobile/blackberry/">
+              블랙베리
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-ios">
+            <a href="/ko/wallets/mobile/ios/">
+              아이오에스
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windowsphone">
+            <a href="/ko/wallets/mobile/windowsphone/">
+              Windows Phone
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-web">
+      
+      
+        <a href="/ko/wallets/web/">웹</a>
+      
+      
+    </li>
+  
+  </ul>
+</div>
+
+
+
+<div class="wallet-list" id="wallets">
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/desktop/linux/arcbit/">
+      
+        <img src="/img/wallet/arcbit.png" alt="ArcBit" />
+        ArcBit
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/desktop/linux/armory/">
+      
+        <img src="/img/wallet/armory.png" alt="Armory" />
+        Armory
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="1">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/desktop/linux/bitcoincore/">
+      
+        <img src="/img/wallet/bitcoincore.png" alt="Bitcoin Core" />
+        Bitcoin<br>Core
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="1">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/desktop/linux/bitcoinknots/">
+      
+        <img src="/img/wallet/bitcoinknots.png" alt="Bitcoin Knots" />
+        Bitcoin<br>Knots
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/desktop/linux/bitgo/">
+      
+        <img src="/img/wallet/bitgo.png" alt="BitGo" />
+        BitGo
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/desktop/linux/bither/">
+      
+        <img src="/img/wallet/bither.png" alt="Bither" />
+        Bither
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/desktop/linux/electrum/">
+      
+        <img src="/img/wallet/electrum.png" alt="Electrum" />
+        Electrum
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/desktop/linux/greenaddress/">
+      
+        <img src="/img/wallet/greenaddress.png" alt="GreenAddress" />
+        Green<br>Address
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ko/wallets/desktop/linux/msigna/">
+      
+        <img src="/img/wallet/msigna.png" alt="mSIGNA" />
+        mSIGNA
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
+
+
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    천천히 학습해보세요
+  </h2>
+  <p>
+    비트코인은 당신이 알고 매일 사용하는 타사와 다릅니다. 중요한 거래를 위해 비트코인을 사용하기 시작하시기 전에,  <a href="/ko/you-need-to-know"><b>알고계셔야 하는 것</b></a>을 반드시 읽어주세요, 그리고 <a href="/ko/secure-your-wallet"><b>지갑 보호하기</b></a>의 올바른 단계를 따라주세요. 지갑을 조심스럽게 선택하고, 돈을 보호하기위한 좋은 실천사항을 따르는 것은 당신의 책임입니다.
+  </p>
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/ko/legal">법적 고지</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/ko/press">기사</a>
+  <a href="/ko/about-us">bitcoin.org 소개</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>이 커뮤니티 웹사이트의 후원자</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2017 <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT 라이센스</a>에 따라 배포되었습니다.</div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,828 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>mSIGNA - Desktop - Mac - Kies uw portemonnee - Bitcoin</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>Nederlands</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/" class="active">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/nl/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/" selected="selected">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Inleiding</a>
+    <ul>
+      <li><a href="/nl/bitcoin-voor-particulieren">Particulieren</a></li>
+      <li><a href="/nl/bitcoin-voor-bedrijven">Bedrijven</a></li>
+      <li><a href="/nl/bitcoin-voor-ontwikkelaars">Ontwikkelaars</a></li>
+      <li><a href="/nl/aan-de-slag">Aan de slag</a></li>
+      <li><a href="/nl/hoe-het-werkt">Hoe het werkt</a></li>
+      <li><a href="/nl/wat-u-moet-weten">Wat u moet weten</a></li>
+    </ul>
+  </li>
+  <li><a>Hulpmiddelen</a>
+    <ul>
+      <li><a href="/nl/hulpmiddelen">Hulpmiddelen</a>
+      
+      <li><a href="/nl/community">Community</a></li>
+      
+      <li><a href="/nl/woordenlijst">Woordenlijst</a></li>
+      <li><a href="/nl/evenementen">Evenementen</a></li>
+      
+        <li><a href="/nl/download">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/nl/innovatie">Innovatie</a></li>
+  <li><a>Meedoen</a>
+    <ul>
+      <li><a href="/nl/help-bitcoin">Help Bitcoin</a>
+      
+      
+      <li><a href="/nl/ontwikkeling">Ontwikkeling</a></li>
+    </ul>
+  </li>
+  <li><a href="/nl/faq">FAQ</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/msigna.png" alt="mSIGNA" />
+    <h1>
+      mSIGNA
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  mSIGNA is een geavanceerde maar makkelijk te gebruiken wallet die gekenmerkt wordt door snelheid en eenvoud, schaalbaarheid op ondernemingsniveau, en een sterke beveiliging. Het ondersteunt BIP32, transacties met meerdere handtekeningen, offline opslag, synchronisatie op meerdere apparaten, en versleutelde elektronische en papieren back-ups. 
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/nl/wallets/desktop/windows/msigna/">
+        
+          <img src="/img/os/windows.png"
+               alt="Windows"
+               title="Windows" />
+          <span>Windows</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn active"
+           href="/nl/wallets/desktop/mac/msigna/">
+        
+          <img src="/img/os/mac.png"
+               alt="Mac"
+               title="Mac" />
+          <span>Mac</span>
+        </a>
+        
+        
+        
+        
+        <a class="wallet-os-btn"
+           href="/nl/wallets/desktop/linux/msigna/">
+        
+          <img src="/img/os/linux.png"
+               alt="Linux"
+               title="Linux" />
+          <span>Linux</span>
+        </a>
+        
+      
+    </div>
+    
+    
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="mac">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/mac.png"
+                 alt="Mac"
+                 title="Mac" />
+            <h3 id="wallets-platform-name">Mac</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            
+              <a class="wallet-os-download-link" href="https://ciphrex.com/redirect/?referer=bitcoin.org">Naar de website</a>
+            
+            
+              <a class="wallet-os-source-link" href="https://ciphrex.com/redirect/?url=https://github.com/ciphrex/CoinVault?referer=bitcoin.org"> Broncode</a>
+            
+          </div>
+          <div class="wallet-os-checks">
+            
+            
+            
+              <div class="checkcontrol checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Controle over uw geld
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Deze portemonnee geeft u volledige controle over uw bitcoins. Dit betekent dat geen derde partij uw fondsen kan bevriezen of verliezen. Niettemin bent u nog steeds verantwoordelijk voor het beveiligen en maken van back-ups van uw portemonnee.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkvalidation checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Volledige validatie
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Deze portemonnee vereist het installeren van full-node software die transacties op het Bitcoin-netwerk valideert en doorstuurt. Dit betekent dat u niet in een derde partij hoeft te vertrouwen bij het valideren van betalingen. Full nodes leveren het hoogste niveau van veiligheid en zijn essentieel voor het beschermen van het netwerk. Ze vereisen echter meer ruimte (meer dan 65GB), bandbreedte, en een langere initiële synchronisatietijd.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checktransparency checkpass"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Fundamentele transparantie
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>De ontwikkelaars van deze portemonnee publiceren de broncode van de client. Dit betekent dat iedere ontwikkelaar ter wereld de code kan controleren. U zult echter nog steeds de ontwikkelaars van deze portemonnee moeten vertrouwen bij het installeren of updaten van de uiteindelijke software, omdat het niet deterministisch gebouwd is zoals <a href="/nl/download">Bitcoin Core</a>.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkenvironment checkfail"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Kwetsbare omgeving
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Deze portemonnee kan gebruikt worden op computers die kwetsbaar zijn voor malware. Door het beveiligen van uw computer, gebruik te maken van een sterke wachtwoordzin, het verplaatsen van de meeste van uw fondsen naar "cold storage" of gebruik te maken van dubbele authenticatie maakt u het moeilijker om uw bitcoins te stelen.</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkprivacy checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Verbeterde privacy
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p></p>
+                  
+                    
+                      <div class="checkprivacyaddressreuse checkpass">
+                        <p>Voorkomt spionage van uw betalingen</p>
+                        <p>Deze portemonnee maakt het moeilijker uw saldo en betaling te bespioneren door adressen te roteren. U zou er wel nog voor moeten zorgen om iedere keer dat u een betaling verzoekt een nieuw Bitcoinadres te gebruiken.</p>
+                      </div>
+                    
+                      <div class="checkprivacydisclosure checkpass">
+                        <p>Vermijdt het vrijgeven van informatie</p>
+                        <p>Deze portemonnee geeft geen informatie vrij aan gelijken op het netwerk tijdens het ontvangen of verzenden van een betaling.</p>
+                      </div>
+                    
+                      <div class="checkprivacynetwork checkpass">
+                        <p>Tor kan gebruikt worden</p>
+                        <p>Met deze portemonnee kunt u <a href="https://www.torproject.org/">Tor</a> instellen en gebruiken als proxy om aanvallers of internetproviders ervan te weerhouden uw betalingen met uw IP-adres in verband te brengen.</p>
+                      </div>
+                    
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkfees checkfail"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Static fee suggestions
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>This wallet does not provide any fee suggestions which are based on current network conditions.  This means that your transactions may be subject to delays if the fee chosen is too low, or that you may pay a fee which is too high.</p>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/msigna.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="walletmenu" id="walletmenu">
+
+  <ul>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-desktop active">
+      
+        <a>Desktop</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-linux">
+            <a href="/nl/wallets/desktop/linux/">
+              Linux
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-mac active">
+            <a href="/nl/wallets/desktop/mac/">
+              Mac
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windows">
+            <a href="/nl/wallets/desktop/windows/">
+              Windows
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-hardware">
+      
+      
+        <a href="/nl/wallets/hardware/">Hardware</a>
+      
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-mobile">
+      
+        <a>Mobiel</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-android">
+            <a href="/nl/wallets/mobile/android/">
+              Android
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-blackberry">
+            <a href="/nl/wallets/mobile/blackberry/">
+              BlackBerry
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-ios">
+            <a href="/nl/wallets/mobile/ios/">
+              iOS
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windowsphone">
+            <a href="/nl/wallets/mobile/windowsphone/">
+              Windows Phone
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-web">
+      
+      
+        <a href="/nl/wallets/web/">Web</a>
+      
+      
+    </li>
+  
+  </ul>
+</div>
+
+
+
+<div class="wallet-list" id="wallets">
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/nl/wallets/desktop/mac/arcbit/">
+      
+        <img src="/img/wallet/arcbit.png" alt="ArcBit" />
+        ArcBit
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/nl/wallets/desktop/mac/armory/">
+      
+        <img src="/img/wallet/armory.png" alt="Armory" />
+        Armory
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="1">
+      
+      <a class="wallet-list-item-link"
+         href="/nl/wallets/desktop/mac/bitcoincore/">
+      
+        <img src="/img/wallet/bitcoincore.png" alt="Bitcoin Core" />
+        Bitcoin<br>Core
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="1">
+      
+      <a class="wallet-list-item-link"
+         href="/nl/wallets/desktop/mac/bitcoinknots/">
+      
+        <img src="/img/wallet/bitcoinknots.png" alt="Bitcoin Knots" />
+        Bitcoin<br>Knots
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/nl/wallets/desktop/mac/bitgo/">
+      
+        <img src="/img/wallet/bitgo.png" alt="BitGo" />
+        BitGo
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/nl/wallets/desktop/mac/bither/">
+      
+        <img src="/img/wallet/bither.png" alt="Bither" />
+        Bither
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/nl/wallets/desktop/mac/electrum/">
+      
+        <img src="/img/wallet/electrum.png" alt="Electrum" />
+        Electrum
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="3">
+      
+      <a class="wallet-list-item-link"
+         href="/nl/wallets/desktop/mac/greenaddress/">
+      
+        <img src="/img/wallet/greenaddress.png" alt="GreenAddress" />
+        Green<br>Address
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/nl/wallets/desktop/mac/msigna/">
+      
+        <img src="/img/wallet/msigna.png" alt="mSIGNA" />
+        mSIGNA
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
+
+
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    Neem de tijd om uzelf te onderrichten
+  </h2>
+  <p>
+    Bitcoin is verschillend van wat u kent en elke dag gebruikt. Voor u Bitcoin begint te gebruiken voor belangrijke transacties, lees dan zeker <a href="/nl/wat-u-moet-weten"><b>wat u moet weten</b></a> en neem de nodige stappen om  <a href="/nl/beveilig-uw-portemonnee"><b>uw portemonnee te beveiligen</b></a>. Onthoud altijd dat het uw verantwoordelijkheid is om zorgvuldig uw portemonnee te kiezen en om goede werkwijzen te hanteren om uw geld te beschermen.
+  </p>
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/nl/juridisch">Juridisch</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/nl/pers">Pers</a>
+  <a href="/nl/over-ons">Over bitcoin.org</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>Een communitywebsite gesponsord door</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2017 Beschikbaar onder de <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT-licentie</a></div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,737 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>KeepKey - ハードウェア - ウォレットを選ぶ - ビットコイン</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>日本語</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        
+          <li><a href="/sv/">Svenska</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/">한국의</a></li>
+        
+        
+          <li><a href="/ja/" class="active">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/ja/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/">한국의</option>
+    
+          <option value="/ja/" selected="selected">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>紹介</a>
+    <ul>
+      <li><a href="/ja/bitcoin-for-individuals">個人</a></li>
+      <li><a href="/ja/bitcoin-for-businesses">ビジネス</a></li>
+      <li><a href="/ja/bitcoin-for-developers">開発者</a></li>
+      <li><a href="/ja/getting-started">開始する</a></li>
+      <li><a href="/ja/how-it-works">ビットコインの仕組み</a></li>
+      <li><a href="/ja/you-need-to-know">知っておくべきこと</a></li>
+    </ul>
+  </li>
+  <li><a>リソース</a>
+    <ul>
+      <li><a href="/ja/resources">リソース</a>
+      
+      <li><a href="/ja/community">ビットコインコミュニティ</a></li>
+      
+      <li><a href="/ja/vocabulary">用語</a></li>
+      <li><a href="/ja/events">イベント</a></li>
+      
+        <li><a href="/ja/download">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/ja/innovation">革新</a></li>
+  <li><a>参加する</a>
+    <ul>
+      <li><a href="/ja/support-bitcoin">ビットコインを支援する</a>
+      
+      
+      <li><a href="/ja/development">開発</a></li>
+    </ul>
+  </li>
+  <li><a href="/ja/faq">よくある質問</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <div class="wallet">
+
+  <div class="wallet-logo-container">
+    <img class="wallet-logo" src="/img/wallet/keepkey.png" alt="KeepKey" />
+    <h1>
+      KeepKey
+    </h1>
+  </div>
+
+  <p class="wallet-description">
+  KeepKey is a hardware wallet that makes bitcoin security simple. When you entrust KeepKey with your money, every bitcoin transaction you make must be reviewed and approved via its OLED display and confirmation button.
+  </p>
+
+  <div class="wallet-platforms">
+    <div class="wallet-platforms-menu">
+      
+        
+        
+        
+        
+        <a class="wallet-os-btn active"
+           href="/ja/wallets/hardware/keepkey/">
+        
+          <img src="/img/os/hardware.png"
+               alt="ハードウェア"
+               title="" />
+          <span>ハードウェア</span>
+        </a>
+        
+      
+    </div>
+    
+    
+    <div class="wallet-os-list">
+      <div class="wallet-os-container" id="hardware">
+        <div class="wallet-os-overview">
+          <div class="wallet-os-name">
+            <img src="/img/os/hardware.png"
+                 alt="ハードウェア"
+                 title="" />
+            <h3 id="wallets-platform-name">ハードウェア</h3>
+          </div>
+          <div class="wallet-os-download-buttons">
+            
+              <a class="wallet-os-download-link" href="https://www.keepkey.com/">Webサイトへ</a>
+            
+            
+              <a class="wallet-os-source-link" href="https://github.com/keepkey/"> ソースコード</a>
+            
+          </div>
+          <div class="wallet-os-checks">
+            
+            
+            
+              <div class="checkcontrol checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  あなたのお金に対するコントロール
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>このウォレットを使えば、あなたのビットコインをあなたが完全にコントロールできます。つまり、第三者があなたの資金を凍結したり失くしたりすることがありません。しかし、あなたのウォレットを安全に保ちバックアップすることはあなたの責任です。</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkvalidation checkneutral"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  変動検証
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>支払いの検証機能は、このデバイスであなたがお使いになるソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットの検証スコアをご覧下さい。</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checktransparency checkfail"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  新しいアプリ
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>このウォレットはテストがなされておらず、多数の人々からの評価が発表されていません。つまり、このアプリは、危険なコードやあなたが同意できないことをしているというリスクがより高いかもしれません。</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkenvironment checkgood"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  非常に安全な環境
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>このウォレットはデバイスが提供する安全で特殊な環境から読み込まれます。この環境でソフトウエアをインストールすることはできませんので、コンピュータの脆弱性やマルウェアを非常に効果的に防止します。</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkprivacy checkneutral"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  変動プライバシー
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>プライバシー機能は、このデバイスであなたがお使いのソフトウエア・ウォレットが提供します。お使いになる予定のソフトウエア・ウォレットのプライバシー・スコアをご覧下さい。</p>
+                  
+                </div>
+              </div>
+            
+            
+            
+              <div class="checkfees checkneutral"
+                onclick="walletScoreListener(event);"
+                ontouchstart="walletScoreListener(event);">
+                <p class="wallet-os-check-title">
+                  Variable fee control
+                </p>
+                <div class="wallet-os-check-help-icon"></div>
+                <div class="wallet-os-check-details">
+                  <p>Fee control features are provided by the software wallet you use with this device. Please see the Fee Control score for the software wallet you plan to use.</p>
+                  
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="wallet-os-screenshot">
+          <img src="/img/screenshots/keepkey.png" alt="screenshot">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<div class="walletmenu" id="walletmenu">
+
+  <ul>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-desktop">
+      
+        <a>デスクトップ</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-linux">
+            <a href="/ja/wallets/desktop/linux/">
+              Linux
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-mac">
+            <a href="/ja/wallets/desktop/mac/">
+              Mac
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windows">
+            <a href="/ja/wallets/desktop/windows/">
+              WIndows
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-hardware active">
+      
+      
+        <a href="/ja/wallets/hardware/">ハードウェア</a>
+      
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-mobile">
+      
+        <a>モバイル</a>
+      
+      
+        <ul>
+        
+          
+          
+          <li class="wallet-android">
+            <a href="/ja/wallets/mobile/android/">
+              Android
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-blackberry">
+            <a href="/ja/wallets/mobile/blackberry/">
+              BlackBerry
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-ios">
+            <a href="/ja/wallets/mobile/ios/">
+              iOS
+            </a>
+          </li>
+        
+          
+          
+          <li class="wallet-windowsphone">
+            <a href="/ja/wallets/mobile/windowsphone/">
+              Windows Phone
+            </a>
+          </li>
+        
+        </ul>
+      
+    </li>
+  
+
+    
+    
+    
+    
+
+    
+    
+    <li class="wallet-web">
+      
+      
+        <a href="/ja/wallets/web/">ウェブ</a>
+      
+      
+    </li>
+  
+  </ul>
+</div>
+
+
+
+<div class="wallet-list" id="wallets">
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ja/wallets/hardware/digitalbitbox/">
+      
+        <img src="/img/wallet/digitalbitbox.png" alt="DigitalBitbox" />
+        Digital<br />Bitbox
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ja/wallets/hardware/keepkey/">
+      
+        <img src="/img/wallet/keepkey.png" alt="KeepKey" />
+        KeepKey
+      </a>
+    </div>
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ja/wallets/hardware/ledgernanos/">
+      
+        <img src="/img/wallet/ledgernanos.png" alt="Ledger Nano S" />
+        Ledger<br>Nano S
+      </a>
+    </div>
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    <div class="wallet-list-item" data-walletlevel="2">
+      
+      <a class="wallet-list-item-link"
+         href="/ja/wallets/hardware/trezor/">
+      
+        <img src="/img/wallet/trezor.png" alt="Trezor" />
+        Trezor
+      </a>
+    </div>
+  
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  walletRotate();
+</script>
+
+
+<div class="walletsdisclaimer">
+  <h2 id="educate-yourself">
+    <img src="/img/icons/warning.svg" class="warningicon" alt="warning">
+    時間をかけて学びましょう
+  </h2>
+  <p>
+    ビットコインは、あなたが知っていて毎日使うものとは異なります。ビットコインを大きな取引に使い始める前に、必ず <a href="/ja/you-need-to-know"><b>知っておくべきこと</b></a> をお読みになって <a href="/ja/secure-your-wallet"><b>あなたのウォレットを安全に保つ</b></a>ための適切なステップを踏んでください。あなたのウォレットを注意深く選び、あなたのお金を守るために良い習慣を適応することは、あなたの責任であることを常に覚えておいてください。
+  </p>
+</div>
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/ja/legal">法律</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/ja/press">プレス</a>
+  <a href="/ja/about-us">bitcoin.org について</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>コミュニティ・ウエブサイト　主催：</span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2017 <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MITライセンス</a>のもとでのリリース</div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+
+</body>
+
+</html>
