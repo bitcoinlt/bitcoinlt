@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+<html lang="uk">
+
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta property="og:image" content="https://bitcoin.org/img/icons/opengraph.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Атака 51%, Атака більшості - Bitcoin Glossary</title>
+
+<link rel="stylesheet" href="/css/font-awesome-4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/main.css">
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie.css"><script type="text/javascript" src="/js/ie.js"></script><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"><![endif]-->
+
+<link rel="stylesheet" href="/css/sans.css">
+<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/img/icons/logo_ios.png"/>
+<script>
+    window.cookieconsent_options = {
+        theme: 'light-floating'
+    }
+</script>
+<script type="text/javascript" src="/js/cookieconsent/cookieconsent.js"></script>
+<script>
+if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNotTrack != "1" && navigator.msDoNotTrack != "1" ){
+	var script = document.createElement('script');
+	script.src = '/js/analytics.js'
+	document.getElementsByTagName("head")[0].appendChild(script);
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+<div id="detectmobile" class="detectmobile"></div>
+
+
+
+
+
+
+
+<div class="head"><div>
+  
+<ul class="lang">
+  <li><a>Українська</a>
+  <ul>
+    <li><ul>
+      
+      
+        
+          <li><a href="/id/">Bahasa Indonesia</a></li>
+        
+        
+          <li><a href="/da/">Dansk</a></li>
+        
+        
+          <li><a href="/de/">Deutsch</a></li>
+        
+        
+          <li><a href="/en/">English</a></li>
+        
+        
+          <li><a href="/es/">Español</a></li>
+        
+        
+          <li><a href="/fr/">Français</a></li>
+        
+        
+          <li><a href="/it/">Italiano</a></li>
+        
+        
+          <li><a href="/lt/">Lietuvių</a></li>
+        
+        
+          <li><a href="/hu/">Magyar</a></li>
+        
+        
+          <li><a href="/nl/">Nederlands</a></li>
+        
+        
+          <li><a href="/pl/">Polski</a></li>
+        
+        
+          <li><a href="/pt_BR/">Português Brasil</a></li>
+        
+        
+          <li><a href="/ro/">Română</a></li>
+        
+        
+          <li><a href="/sl/">Slovenščina</a></li>
+        
+        </ul></li><li><ul>
+          <li><a href="/sv/">Svenska</a></li>
+        
+        
+          <li><a href="/tr/">Türkçe</a></li>
+        
+        
+          <li><a href="/el/">Ελληνικά</a></li>
+        
+        
+          <li><a href="/bg/">български</a></li>
+        
+        
+          <li><a href="/ru/">Русский</a></li>
+        
+        
+          <li><a href="/uk/" class="active">Українська</a></li>
+        
+        
+          <li><a href="/ar/">العربية</a></li>
+        
+        
+          <li><a href="/fa/">فارسی</a></li>
+        
+        
+          <li><a href="/hi/">हिन्दी</a></li>
+        
+        
+          <li><a href="/ko/">한국의</a></li>
+        
+        
+          <li><a href="/ja/">日本語</a></li>
+        
+        
+          <li><a href="/zh_CN/">简体中文</a></li>
+        
+        
+          <li><a href="/zh_TW/">繁體中文</a></li>
+        
+      </ul></li>
+    </ul>
+  </li>
+</ul>
+
+  
+
+<a id="menumobile" class="menumobile" onclick="mobileMenuShow(event);" ontouchstart="mobileMenuShow(event);"></a>
+
+  
+
+<a class="logo" href="/uk/"><img src="/img/icons/logotop.svg" alt="Bitcoin"></a>
+
+  
+<div id="langselect" class="langselect"><select onchange="window.location=this.value;">
+    
+          <option value="/id/">Bahasa Indonesia</option>
+    
+          <option value="/da/">Dansk</option>
+    
+          <option value="/de/">Deutsch</option>
+    
+          <option value="/en/">English</option>
+    
+          <option value="/es/">Español</option>
+    
+          <option value="/fr/">Français</option>
+    
+          <option value="/it/">Italiano</option>
+    
+          <option value="/lt/">Lietuvių</option>
+    
+          <option value="/hu/">Magyar</option>
+    
+          <option value="/nl/">Nederlands</option>
+    
+          <option value="/pl/">Polski</option>
+    
+          <option value="/pt_BR/">Português Brasil</option>
+    
+          <option value="/ro/">Română</option>
+    
+          <option value="/sl/">Slovenščina</option>
+    
+          <option value="/sv/">Svenska</option>
+    
+          <option value="/tr/">Türkçe</option>
+    
+          <option value="/el/">Ελληνικά</option>
+    
+          <option value="/bg/">български</option>
+    
+          <option value="/ru/">Русский</option>
+    
+          <option value="/uk/" selected="selected">Українська</option>
+    
+          <option value="/ar/">العربية</option>
+    
+          <option value="/fa/">فارسی</option>
+    
+          <option value="/hi/">हिन्दी</option>
+    
+          <option value="/ko/">한국의</option>
+    
+          <option value="/ja/">日本語</option>
+    
+          <option value="/zh_CN/">简体中文</option>
+    
+          <option value="/zh_TW/">繁體中文</option>
+    
+</select></div>
+
+  
+
+<ul id="menusimple" class="menusimple menumain" onclick="mobileMenuHover(event);" ontouchstart="mobileMenuHover(event);">
+  <li><a>Презентація</a>
+    <ul>
+      <li><a href="/uk/bitcoin-for-individuals">Приватним особам</a></li>
+      <li><a href="/uk/bitcoin-for-businesses">Бізнесу</a></li>
+      <li><a href="/uk/bitcoin-for-developers">Розробникам</a></li>
+      <li><a href="/uk/getting-started">Початок роботи</a></li>
+      <li><a href="/uk/how-it-works">Як це працює</a></li>
+      <li><a href="/uk/you-need-to-know">Ви повинні це знати</a></li>
+    </ul>
+  </li>
+  <li><a>Ресурси</a>
+    <ul>
+      <li><a href="/uk/resources">Ресурси</a>
+      
+      <li><a href="/uk/community">Спільнота</a></li>
+      
+      
+      
+      <li><a href="/uk/vocabulary">Словник</a></li>
+      <li><a href="/uk/events">Події</a></li>
+      
+        <li><a href="/uk/download">Bitcoin Core</a></li>
+      
+    </ul>
+  </li>
+  <li><a href="/uk/innovation">Інновації</a></li>
+  <li><a>Взяти участь</a>
+    <ul>
+      <li><a href="/uk/support-bitcoin">Підтримка Біткойн</a>
+      
+      
+      <li><a href="/uk/development">Розробка</a></li>
+    </ul>
+  </li>
+  <li><a href="/uk/faq">ЧаПи</a></li>
+</ul>
+
+</div></div>
+
+<div class="body">
+  
+
+<div class="breadcrumbs">
+  
+    
+      <a href="/uk/">Біткойн</a>
+        
+      &gt;
+    
+  
+    
+      <a href="/uk/developer-documentation">Документація Розробника</a>
+        
+      &gt;
+    
+  
+    
+      <a href="/uk/developer-glossary">Глосарій</a>
+        
+      &gt;
+    
+  
+    
+      
+          
+          
+            Атака 51 відсотка
+          
+            
+          
+        
+    
+  
+</div>
+
+  
+
+<div id="content" class="content">
+  <link rel="stylesheet" href="/css/jquery-ui.min.css">
+
+
+
+<div class="subhead-links sourcefile" data-sourcefile="_data/glossary/uk/51-percent-attack.yaml"
+><a href="https://github.com/bitcoin-dot-org/bitcoin.org/edit/master/_data/glossary/uk/51-percent-attack.yaml">Редагувати</a>
+| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/commits/master/_data/glossary/uk/51-percent-attack.yaml">Зміни</a>
+| <a href="https://github.com/bitcoin-dot-org/bitcoin.org/issues/new?body=Source%20File%3A%20_data/glossary/uk/51-percent-attack.yaml%0A%0A">Зарапортувати помилку</a>
+| <a href="/uk/development#devcommunities">Обговорити</a>
+
+| <a href="/uk/development#devcommunities">Перекласти</a>
+
+</div>
+
+
+<br>
+
+
+
+<h1>Атака 51%, Атака більшості</h1>
+
+<p class="summary"></p>
+
+
+<p><input id="glossary_term" class="glossary_term" placeholder="Шукайте в глосарію, RPC тощо" /></p>
+
+<div class="notice">
+  <p><span>Це тлумачення з <a href="/en/developer-glossary">технічного глосарія</a>.</span></p>
+</div>
+
+<h2 id="section">Визначення</h2>
+
+<p>Здатність контролювати більшу частину хеш рейту мережі, щоб контролювати історію транзакцій та запобігати створенню нових транзакцій</p>
+
+<h3 id="section-1">Синоніми</h3>
+
+<ul>
+  <li>
+    <p>Атака 51 відсотка</p>
+  </li>
+  <li>
+    <p>Атака більшості</p>
+  </li>
+</ul>
+
+<h3 id="section-2">Посилання</h3>
+
+<ul>
+  <li>
+    <p><a href="/en/developer-guide#term-51-attack">51% attack</a> — Bitcoin.org Developer Guide</p>
+  </li>
+  <li>
+    <p><a href="http://bitcoin.stackexchange.com/q/658">What can an attacker with 51% of hash power do?</a> — Bitcoin StackExchange</p>
+  </li>
+  <li>
+    <p><a href="/en/bitcoin-paper">Bitcoin.pdf</a> — Satoshi Nakamoto (Bitcoin.org)</p>
+  </li>
+</ul>
+
+
+
+</div>
+
+  <div class="footer">
+    
+
+<div>
+  <p>Bitcoin.org is community supported: <a href="bitcoin:3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa" target="_blank">3FkenCiXpSLqD8L79intRNXUgjRoH9sjXa</a></p>
+</div>
+
+<div class="footermenu">
+  <a href="/en/alerts" class="statusmenu">Network Status</a>
+  <a href="/uk/legal">Правові питання</a>
+  
+  <a href="/en/privacy">Privacy Policy</a>
+  
+  <a href="/uk/press">Преса</a>
+  <a href="/uk/about-us">Про bitcoin.org</a>
+  <a href="/en/blog">Blog</a>
+</div>
+
+    
+
+<div class="footersponsor">
+  <!--<div><span>Спонсор веб-сайту спільноти </span> <a href="https://bitcoinfoundation.org/"><img src="/img/brand/bitcoinfoundation.png" alt="Bitcoin Foundation"></a></div>-->
+</div>
+
+    
+
+<div class="footerlicense">© Bitcoin Project 2009-2018 ПЗ розповсюджується за <a href="http://opensource.org/licenses/mit-license.php" target="_blank">ліцензією MIT</a></div>
+
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+  fallbackSVG();
+  addAnchorLinks();
+  trackOutgoingLinks();
+</script>
+
+
+
+  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+<script src="/js/jquery/jquery-ui.min.js"></script>
+<script src="/js/devsearch.js"></script>
+<script>updateToc();</script>
+
+
+
+
+
+</body>
+
+</html>
