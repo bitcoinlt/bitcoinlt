@@ -5,9 +5,65 @@
     <description>News about Bitcoin.org</description>
     <link>//</link>
     <atom:link href="//en/rss/blog.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 10 Feb 2018 19:06:30 +0200</pubDate>
-    <lastBuildDate>Sat, 10 Feb 2018 19:06:30 +0200</lastBuildDate>
+    <pubDate>Sat, 10 Feb 2018 19:32:33 +0200</pubDate>
+    <lastBuildDate>Sat, 10 Feb 2018 19:32:33 +0200</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Vote and Help Choose Bitcoin.org&#39;s New Design</title>
+        <description>&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/blog/free/redesigning-homepage.png&quot; alt=&quot;Redesigning Bitcoin.org&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As one of the most-visited websites in the Bitcoin ecosystem, Bitcoin.org helps
+millions of people each month, learn more about Bitcoin. One of our goals in
+2018 is to modernize the design of the site in an effort to continue to
+provide rich content and information to users in an efficient way, as Bitcoin
+technology continues to evolve.&lt;/p&gt;
+
+&lt;p&gt;Below are three new homepage designs we’d like to vote on. Each version
+shows what the homepage would look like on a desktop, handheld or tablet
+device. The version that receives the most votes will then be further extended
+into the subpages of the site:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Version 1 (&lt;a href=&quot;https://invis.io/W6F8UUDPX#/272286353_1-8-18_Bitcoin-org_Ver1_Desktop_1200px&quot;&gt;Desktop&lt;/a&gt; / &lt;a href=&quot;https://invis.io/BJF8UVJYA#/272475274_1-8-18_Bitcoin-org_Ver1__Mobile_320px&quot;&gt;Handheld&lt;/a&gt; / &lt;a href=&quot;https://invis.io/MSF8UUNYZ#/272470844_1-8-18_Bitcoin-org_Ver1_Tablet_768px&quot;&gt;Tablet&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Version 2 (&lt;a href=&quot;https://invis.io/VGFB69IYR#/273185825_12-01-18_Bitcoin-org_Ver2_Desktop_1200px__1&quot;&gt;Desktop&lt;/a&gt; / &lt;a href=&quot;https://invis.io/TJFC8U3WVK3#/273522832_12-01-18_Bitcoin-org_Ver2__Mobile_320px&quot;&gt;Handheld&lt;/a&gt; / &lt;a href=&quot;https://invis.io/PXFC8P6MK9W#/273522833_12-01-18_Bitcoin-org_Ver2_Tablet_768px&quot;&gt;Tablet&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Version 3 (&lt;a href=&quot;https://invis.io/6VFF8CB9CJA#/274446152_19-01-18_Bitcoin-org_Ver3_Desktop_1200px&quot;&gt;Desktop&lt;/a&gt; / &lt;a href=&quot;https://invis.io/SVFG91LJAZ9#/274784637_22-01-18_Bitcoin-org_Ver3__Mobile_320px&quot;&gt;Handheld&lt;/a&gt; / &lt;a href=&quot;https://invis.io/C6FG9114QGM#/274784638_22-01-18_Bitcoin-org_Ver3_Tablet_768px&quot;&gt;Tablet&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please help spread the word and choose your favorite design.&lt;/p&gt;
+
+&lt;s&gt;Voting will be open until 0:00 UTC on Sunday, February 4th.&lt;/s&gt;
+
+&lt;p&gt;&lt;em&gt;Voting has ended&lt;/em&gt; - &lt;strong&gt;the winner is Version 3!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dcdt.typeform.com/report/rv9C1j/rZcaOMYTVMaEiLi1&quot;&gt;View the results&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;about-bitcoinorg&quot;&gt;About Bitcoin.org&lt;/h2&gt;
+
+&lt;p&gt;Bitcoin.org was originally registered and owned by Satoshi Nakamoto and Martti
+Malmi. When Satoshi left the project, he gave ownership of the domain to
+additional people, separate from the Bitcoin developers, to spread
+responsibility and prevent any one person or group from easily gaining control
+over the Bitcoin project. Since then, the site has been developed and
+maintained by different members of the Bitcoin community.&lt;/p&gt;
+
+&lt;p&gt;There have been over 3,200 commits from 180 contributors from all over the
+world. In addition to this, over 950 translators have helped to make the site
+display natively to visitors by default in their own languages —now 25
+different languages and growing.&lt;/p&gt;
+
+&lt;h2 id=&quot;interested-in-getting-involved&quot;&gt;Interested in getting involved?&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate&quot;&gt;Learn how you can participate&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 28 Jan 2018 00:00:00 +0200</pubDate>
+        <link>//en/posts/vote-on-the-new-site-design</link>
+        <guid isPermaLink="true">//en/posts/vote-on-the-new-site-design</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Bitcoin.org to denounce &quot;Segwit2x&quot;</title>
@@ -1436,62 +1492,6 @@ not) (TheBlueMatt)&lt;/li&gt;
         <pubDate>Wed, 08 Mar 2017 00:00:00 +0200</pubDate>
         <link>//en/posts/bitcoin-core-version-0-14-0-released</link>
         <guid isPermaLink="true">//en/posts/bitcoin-core-version-0-14-0-released</guid>
-        
-        
-        <category>blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Bitcoin Exchanges: Options for Newcomers to Bitcoin Now Available</title>
-        <description>&lt;p class=&quot;center&quot;&gt;&lt;img src=&quot;/img/blog/free/bitcoin-exchanges.png&quot; alt=&quot;Bitcoin Exchanges&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://bitcoin.org/en/exchanges&quot;&gt;A directory of Bitcoin Exchanges servicing the world’s 20 largest
-economies&lt;/a&gt;, as well as several international
-options (serving many countries) are now available on Bitcoin.org.&lt;/p&gt;
-
-&lt;h2 id=&quot;helping-people-interested-in-bitcoin-get-bitcoin&quot;&gt;Helping People Interested in Bitcoin, Get Bitcoin&lt;/h2&gt;
-&lt;p&gt;This new addition to the site:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Links to the &lt;code class=&quot;highlighter-rouge&quot;&gt;Find an Exchange&lt;/code&gt; button on the &lt;a href=&quot;https://bitcoin.org/en/getting-started&quot;&gt;Getting Started&lt;/a&gt;
-page and helps many of the new people entering the Bitcoin ecosystem via
-Bitcoin.org, get bitcoin.&lt;/li&gt;
-  &lt;li&gt;Improves SEO for Bitcoin.org, because the site can now potentially rank very
-well for “Bitcoin Exchange” as well as other key phrases that include country
-names that are contained on the page (i.e. Bitcoin Exchange China, Bitcoin
-Exchange India, etc.).&lt;/li&gt;
-  &lt;li&gt;Has unique anchor links for each country that people can share on social media
-that will allow others to find the bitcoin exchanges that are available for
-their specific country.&lt;/li&gt;
-  &lt;li&gt;Allows Bitcoin.org to focus the &lt;a href=&quot;https://bitcoin.org/en/choose-your-wallet&quot;&gt;wallets page&lt;/a&gt;
-on wallets that allow people to maintain full control over their funds
-(Resolving &lt;a href=&quot;https://github.com/bitcoin-dot-org/bitcoin.org/issues/1109&quot;&gt;issue #1109&lt;/a&gt;,
-because custodial wallets that provide exchange services can be moved off of the
-wallets page to this new page).&lt;/li&gt;
-  &lt;li&gt;Is also accessible via the Resources &lt;code class=&quot;highlighter-rouge&quot;&gt;dropdown&lt;/code&gt; menu.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;questions-comments--feedback&quot;&gt;Questions, Comments &amp;amp; Feedback&lt;/h2&gt;
-&lt;p&gt;Questions, issues, suggestions or feedback are always welcome on Bitcoin.org. If
-interested in contributing in this regard, please open an issue or submit a pull
-request.&lt;/p&gt;
-
-&lt;h2 id=&quot;use-discretion-when-choosing-an-exchange&quot;&gt;Use Discretion when Choosing an Exchange&lt;/h2&gt;
-&lt;p&gt;As noted in the above screen shot, Bitcoin Exchanges provide varying degrees of
-safety, security, privacy, and control over your funds and information. Perform
-your own due diligence and choose a wallet where you will keep your bitcoin
-before selecting an exchange.&lt;/p&gt;
-
-&lt;p&gt;=== === ===&lt;/p&gt;
-
-&lt;p&gt;Interested in getting involved with Bitcoin.org?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/bitcoin-dot-org/bitcoin.org#how-to-participate&quot;&gt;Learn how you can participate&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 03 Feb 2017 00:00:00 +0200</pubDate>
-        <link>//en/posts/bitcoin-exchanges-options-for-newcomers</link>
-        <guid isPermaLink="true">//en/posts/bitcoin-exchanges-options-for-newcomers</guid>
         
         
         <category>blog</category>

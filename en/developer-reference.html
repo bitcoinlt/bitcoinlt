@@ -229,6 +229,7 @@ if( navigator.doNotTrack != "yes" && navigator.doNotTrack != "1" && window.doNot
       <li><a href="/en/community">Community</a></li>
       
       
+      <li><a href="/en/developer-documentation">Documentation</a></li>
       
       <li><a href="/en/vocabulary">Vocabulary</a></li>
       <li><a href="/en/events">Events</a></li>
@@ -5802,7 +5803,7 @@ All existing <a href="/en/glossary/input" title="An input in a transaction which
         <td><a href="/en/glossary/input" title="An input in a transaction which contains three fields: an outpoint, a signature script, and a sequence number.  The outpoint references a previous output and the signature script allows spending it." class="auto-link">Inputs</a> from <a href="/en/glossary/watch-only-address" title="An address or pubkey script stored in the wallet without the corresponding private key, allowing the wallet to watch for outputs but not spend them." class="auto-link">watch-only addresses</a> are also considered. The default is <code>false</code></td>
       </tr>
       <tr>
-        <td>→ <br /><a href="/en/developer-reference#lockunspent" class="auto-link"><code>lockUnspent</code></a></td>
+        <td>→ <br /><code>lockUnspents</code></td>
         <td>bool</td>
         <td>Optional<br />(0 or 1)</td>
         <td>The selected <a href="/en/glossary/output" title="An output in a transaction which contains two fields: a value field for transferring zero or more satoshis and a pubkey script for indicating what conditions must be fulfilled for those satoshis to be further spent." class="auto-link">outputs</a> are locked after running the <a href="/en/developer-reference#remote-procedure-calls-rpcs" class="auto-link">rpc</a> call. The default is <code>false</code></td>
